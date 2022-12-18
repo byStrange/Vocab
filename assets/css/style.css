@@ -35,11 +35,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 250ms;
 }
 
 .container .box .content {
   font-size: 3rem;
-  text-shadow: 2px 3px rgba(255, 255, 255, 0.);
+  text-shadow: 2px 3px rgba(255, 255, 255, 0);
   color: #fff;
 }
 
@@ -66,15 +67,31 @@ body {
 
 .btn {
   padding: 10px 15px;
+  user-select: none;
   font-size: 19px;
-  background: linear-gradient(35deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.29));
+  background: linear-gradient(
+    35deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.29)
+  );
   border-radius: 10px;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   z-index: 1;
   cursor: pointer;
   color: #fff;
   backdrop-filter: blur(5px);
+  transition: 250ms;
+}
+
+.btn:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.01, 1.01);
+}
+
+.btn:active {
+  transform: scale(1.1, 1.1);
+  -webkit-tap-highlight-color: transparent;
 }
 
 .btn.rounded {
@@ -83,7 +100,28 @@ body {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   color: #fff;
-  border-color:rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   font-family: Ubuntu;
+}
+
+.btn.secondary:hover {
+  background-color: rgba(26, 96, 195, 0.7);
+}
+
+.btn.secondary {
+  border-color: rgb(26, 96, 195);
+  background: transparent;
+}
+
+#mainBox[data-switched="on"] {
+  position: absolute;
+  max-width: 660px;
+  width: 100%;
+  z-index: 2;
+  backdrop-filter: blur(20pxz);
+}
+
+#mainBox[data-switched="on"] #word{
+  display: none;  
 }
