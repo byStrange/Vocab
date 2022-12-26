@@ -44,6 +44,14 @@ body {
   color: #fff;
 }
 
+.container .box #topics {
+  width: 100%;
+  height: 100%;
+  border: 1px solid red;
+  margin: 8px 8px;
+}
+
+
 .container .panel {
   position: relative;
   min-height: 50px;
@@ -114,14 +122,41 @@ body {
   background: transparent;
 }
 
-#mainBox[data-switched="on"] {
-  position: absolute;
-  max-width: 660px;
-  width: 100%;
-  z-index: 2;
-  backdrop-filter: blur(20pxz);
+.list {
+  padding: 10px 15px;
 }
 
-#mainBox[data-switched="on"] #word{
-  display: none;  
+.list li{
+  width: 100%;
+  border: 1px solid red;
+  padding: 10px 15px;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border-color:rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+}
+
+#list[data-switched="off"] {
+  transform-origin: right;
+  transform: scaleX(0);
+  position: absolute;
+}
+
+#list[data-switched="on"] {
+  position: absolute;
+  max-width: 800px;
+  width: 95%;
+  height: 50%;
+  backdrop-filter: blur(20px);
+  z-index: 4;
+  overflow: auto;
+}
+
+@media screen and (max-width: 767px) {
+  #list[data-switched="on"] {
+    height: 100%;
+  }
 }
