@@ -9,7 +9,8 @@
 </template>
 
 <script>
-import { data } from '@/data.js'
+import { data } from "@/composables/getData.js";
+
 export default {
   data() {
     return {

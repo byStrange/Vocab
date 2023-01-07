@@ -21,7 +21,9 @@ import Nav from "./components/Nav.vue";
 import Box from "./components/Box.vue";
 import List from "./components/List.vue";
 import Panel from "./components/Panel.vue";
-import { data } from "@/data.js";
+import { data } from "@/composables/getData.js";
+import { getData } from "@/composables/getData.js";
+
 export default {
   data() {
     return {
@@ -54,6 +56,9 @@ export default {
       this.word =
         this.fullWord[0] === this.word ? this.fullWord[1] : this.fullWord[0];
     },
+  },
+  mounted() {
+    console.log(getData() )
   },
   name: "App",
   components: {
