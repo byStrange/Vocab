@@ -1,0 +1,66 @@
+<template>
+  <div class="container" :data-id="fullWord">
+    <Nav
+      @showList="data_switched = 'on'"
+      :data_switched="data_switched"
+      @showTopics="showWord = false"
+    />
+    <Box
+      :showWord="showWord"
+      @changeShowWord="changeShowWord($data)"
+      @startTest="startTest($event)"
+      :wordFromChoosenTopic="word"
+    />
+    <Panel @nextBtnClick="nextWord" @showBtnClick="makeWordReversed" />
+    <List :data_switched="data_switched" />
+  </div>
+</template>
+
+<script>
+import Nav from "./components/Nav.vue";
+import Box from "./components/Box.vue";
+import List from "./components/List.vue";
+import Panel from "./components/Panel.vue";
+import { data } from "@/data.js";
+export default {
+  data() {
+    return {
+      data_switched: "off",
+      showWord: false,
+      choosenTopic: null,
+      word: null,
+      fullWord: null,
+    };
+  },
+  methods: {
+    changeShowWord(value) {
+      this.showWord = value;
+    },
+    startTest($event) {
+      this.choosenTopic = $event;
+      this.fullWord = this.choosenTopic.words.shift();
+      this.word = this.fullWord[Math.floor(Math.random() * 2)];
+    },
+    nextWord() {
+      if (!this.choosenTopic.words.length) {
+        this.word = "THE END";
+        return;
+      }
+      console.log(data)
+      this.fullWord = this.choosenTopic.words.shift();
+      this.word = this.fullWord[Math.floor(Math.random() * 2)];
+    },
+    makeWordReversed() {
+      this.word =
+        this.fullWord[0] === this.word ? this.fullWord[1] : this.fullWord[0];
+    },
+  },
+  name: "App",
+  components: {
+    Nav,
+    Box,
+    List,
+    Panel,
+  },
+};
+</script>
