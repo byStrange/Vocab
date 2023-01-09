@@ -48,16 +48,6 @@ export default {
         this.word = "THE END";
         return;
       }
-      console.log(data)
-      this.fullWord = this.choosenTopic.words.shift();
-      this.word = this.fullWord[Math.floor(Math.random() * 2)];
-    },
-    makeWordReversed() {
-      this.word =
-        this.fullWord[0] === this.word ? this.fullWord[1] : this.fullWord[0];
-    },
-  },
-  mounted() {
     console.log(getData() )
   },
   name: "App",
