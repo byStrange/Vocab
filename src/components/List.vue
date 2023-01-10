@@ -1,8 +1,8 @@
 <template>
-  <div class="list" ref="list" :data-switched="data_switched">
+  <div class="list" ref="list" :data-switched="data_switched" @dblclick="close">
     <ul v-for="i in topics" :key="i.id">
       <template v-if="i.choosen">
-        <li v-for="w in i.words" :key="w"><span>{{ w[0]  }}</span> - <span>{{ w[1] }}</span></li>
+        <li v-for="w in i.words" :key="w"><span>{{ w.word  }}</span> - <span>{{ w.translation }}</span></li>
       </template>
     </ul>
   </div>
@@ -17,7 +17,16 @@ export default {
       topics: data,
     };
   },
-  props: ["data_switched"],
+  methods: {
+    close() {
+      this.data_switched = "off"
+    },
+  },
+  props: {
+    data_switched: {
+      type: String,
+    },
+  },
   name: "List",
 };
 </script>

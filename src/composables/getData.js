@@ -8,6 +8,11 @@ const getData = () => {
   const load = async () => {
     try {
       const res = await projectFirestore.collection("topics").get();
+
+      const data = [];
+      data.forEach((e) => {
+        projectFirestore.collection("topics").add(e);
+      });
       res.docs.forEach((doc) => {
         data.value.push(doc.data());
       });
@@ -116,83 +121,83 @@ const data = [
     words: [
       {
         word: "bring",
-        translation: "olib kelmoq"
+        translation: "olib kelmoq",
       },
       {
         word: "castle",
-        translation: "qasr"
+        translation: "qasr",
       },
       {
         word: "command",
-        translation: "buyruq bermoq"
+        translation: "buyruq bermoq",
       },
       {
         word: "counsel",
-        translation: "maslahat bermoq"
+        translation: "maslahat bermoq",
       },
       {
         word: "ensure",
-        translation: "ta'minlamoq"
+        translation: "ta'minlamoq",
       },
       {
         word: "explosion",
-        translation: "portlash"
+        translation: "portlash",
       },
       {
         word: "jewellery",
-        translation: "qimmatbaho tosh"
+        translation: "qimmatbaho tosh",
       },
       {
         word: "land",
-        translation: "qo'nmoq"
+        translation: "qo'nmoq",
       },
       {
         word: "meteor",
-        translation: "meteorit"
+        translation: "meteorit",
       },
       {
         word: "monster",
-        translation: "maxluq"
+        translation: "maxluq",
       },
       {
         word: "northern",
-        translation: "shimoliy"
+        translation: "shimoliy",
       },
       {
         word: "remote",
-        translation: "olis, uzoq"
+        translation: "olis, uzoq",
       },
       {
         word: "southern",
-        translation: "janubiy"
+        translation: "janubiy",
       },
       {
         word: "statue",
-        translation: "haykal"
+        translation: "haykal",
       },
       {
         word: "steam",
-        translation: "bug'"
+        translation: "bug'",
       },
       {
         word: "submit",
-        translation: "bo'ysunmoq, aytganini qilmoq"
+        translation: "bo'ysunmoq, aytganini qilmoq",
       },
       {
         word: "temple",
-        translation: "ibodatxona"
+        translation: "ibodatxona",
       },
       {
         word: "upper",
-        translation: "yuqori, ustki"
+        translation: "yuqori, ustki",
       },
       {
         word: "weed",
-        translation: "begona o't"
+        translation: "begona o't",
       },
       {
         word: "wing",
-        translation: "qanot"
+        translation: "qanot",
       },
     ],
     choosen: false,
@@ -203,88 +208,440 @@ const data = [
     words: [
       {
         word: "arrow",
-        translation: "o'q, yoy"
+        translation: "o'q, yoy",
       },
       {
         word: "battle",
-        translation: "jang"
+        translation: "jang",
       },
       {
         word: "bow",
-        translation: "kamon"
+        translation: "kamon",
       },
       {
         word: "brave",
-        translation: "jasur, qo'rqmas"
+        translation: "jasur, qo'rqmas",
       },
       {
         word: "chief",
-        translation: "boshliq, sardor"
+        translation: "boshliq, sardor",
       },
       {
         word: "disadvantage",
-        translation: "kamchilik, salbiy jihat"
+        translation: "kamchilik, salbiy jihat",
       },
 
       {
         word: "enemy",
-        translation: "dushman"
+        translation: "dushman",
       },
       {
         word: "entrance",
-        translation: "kirish yo'li"
+        translation: "kirish yo'li",
       },
       {
         word: "hardly",
-        translation: "arang, zo'rg'a"
+        translation: "arang, zo'rg'a",
       },
       {
         word: "intend",
-        translation: "niyat qilmoq"
+        translation: "niyat qilmoq",
       },
       {
         word: "laughter",
-        translation: "kulgi, shodlik"
+        translation: "kulgi, shodlik",
       },
       {
         word: "log",
-        translation: "g'o'la"
+        translation: "g'o'la",
       },
       {
         word: "military",
-        translation: "armiya"
+        translation: "armiya",
       },
       {
         word: "obey",
-        translation: "bo'ysunmoq"
+        translation: "bo'ysunmoq",
       },
       {
         word: "secure",
-        translation: "olmoq, qo'lga kiritmoq"
+        translation: "olmoq, qo'lga kiritmoq",
       },
       {
         word: "steady",
-        translation: "barqaror"
+        translation: "barqaror",
       },
       {
         word: "trust",
-        translation: "ishonmoq"
+        translation: "ishonmoq",
       },
       {
         word: "twist",
-        translation: "aylantirib bog'lamoq"
+        translation: "aylantirib bog'lamoq",
       },
       {
         word: "unless",
-        translation: "...magan taqdirda"
+        translation: "...magan taqdirda",
       },
       {
         word: "weapon",
-        translation: "qurol-yarog'"
+        translation: "qurol-yarog'",
       },
     ],
     choosen: true,
   },
+  {
+    name: "Essentials2.4",
+    id: "4",
+    words: [
+      {
+        word: "chest",
+        translation: "bag'r, ko'ks",
+      },
+      {
+        word: "confidence",
+        translation: "ishonch, dadillik",
+      },
+      {
+        word: "consequence",
+        translation: "natija, oqibat",
+      },
+      {
+        word: "disaster",
+        translation: "falokat, halokat",
+      },
+      {
+        word: "disturb",
+        translation: "bezovta qilmoq",
+      },
+      {
+        word: "estimate",
+        translation: "tahmin hisoblamoq",
+      },
+      {
+        word: "honor",
+        translation: "sharaflamoq, hurmat qilmoq",
+      },
+      {
+        word: "impress",
+        translation: "lol qoldirmoq",
+      },
+      {
+        word: "marathon",
+        translation: "marafon",
+      },
+      {
+        word: "narrow",
+        translation: "tor",
+      },
+      {
+        word: "pale",
+        translation: "xira",
+      },
+
+      {
+        word: "rough",
+        translation: "g'adir-budir, dag'al",
+      },
+      {
+        word: "satisfy",
+        translation: "qoniqtirmoq",
+      },
+      {
+        word: "scream",
+        translation: "baqirmoq, qichqirmoq",
+      },
+      {
+        word: "sensitive",
+        translation: "sezuvchan, ta'sirchan",
+      },
+      {
+        word: "shade",
+        translation: "soya",
+      },
+      {
+        word: "supplement",
+        translation: "to'ldirmoq, qo'shmoq",
+      },
+      {
+        word: "terror",
+        translation: "dahshat, qo'rquv",
+      },
+      {
+        word: "threat",
+        translation: "xavf, xatar",
+      },
+      {
+        word: "victim",
+        translation: "qurbon",
+      },
+    ],
+  },
+  {
+    name: "Essentials2.5",
+    id: "5",
+    words: [
+      {
+        word: "ancestor",
+        translation: "ajdod",
+      },
+      {
+        word: "angle",
+        translation: "taraf, tomon, burchak",
+      },
+      {
+        word: "boot",
+        translation: "etik",
+      },
+      {
+        word: "border",
+        translation: "chegara",
+      },
+      {
+        word: "congratulate",
+        translation: "tabriklamoq, qutlamoq",
+      },
+      {
+        word: "frame",
+        translation: "ramka",
+      },
+      {
+        word: "heaven",
+        translation: "jannat",
+      },
+      {
+        word: "incredible",
+        translation: "aqlga sig'mas",
+      },
+      {
+        word: "legend",
+        translation: "afsona",
+      },
+      {
+        word: "praise",
+        translation: "maqtamoq",
+      },
+
+      {
+        word: "proceed",
+        translation: "bir yo'nalishdan bormoq",
+      },
+      {
+        word: "pure",
+        translation: "sof, musaffo",
+      },
+      {
+        word: "relative",
+        translation: "qarindosh",
+      },
+      {
+        word: "senior",
+        translation: "katta yoshdagi",
+      },
+      {
+        word: "silent",
+        translation: "jim, sokin, tinch",
+      },
+      {
+        word: "sink",
+        translation: "cho'kmoq",
+      },
+      {
+        word: "superior",
+        translation: "uston, yuqori",
+      },
+      {
+        word: "surround",
+        translation: "o'rab olmoq",
+      },
+      {
+        word: "thick",
+        translation: "qalin, keng",
+      },
+      {
+        word: "wrap",
+        translation: "o'ramoq",
+      },
+    ],
+    choosen: false,
+  },
+  {
+    name: "Essentials.2.6",
+    id: "6",
+    words: [
+      {
+        word: "abroad",
+        translation: "xorij, chet el",
+      },
+      {
+        word: "anger",
+        translation: "jahlini chiqarmoq",
+      },
+      {
+        word: "bride",
+        translation: "kelinchak",
+      },
+      {
+        word: "brief",
+        translation: "qisqa",
+      },
+      {
+        word: "chase",
+        translation: "quvlamoq, quvmoq",
+      },
+      {
+        word: "disappoint",
+        translation: "hafa qilmoq",
+      },
+      {
+        word: "dive",
+        translation: "sho'ng'imoq",
+      },
+      {
+        word: "exchange",
+        translation: "ayriboshlamoq",
+      },
+      {
+        word: "favor",
+        translation: "yordam, muruvvat",
+      },
+      {
+        word: "fee",
+        translation: "to'lov, badal",
+      },
+      {
+        word: "forever",
+        translation: "abadiy",
+      },
+      {
+        word: "guy",
+        translation: "erkak kishi",
+      },
+      {
+        word: "lovely",
+        translation: "yoqimli, suyukli",
+      },
+      {
+        word: "mood",
+        translation: "kayfiyat",
+      },
+      {
+        word: "palace",
+        translation: "qasr, saroy",
+      },
+      {
+        word: "permit",
+        translation: "ruxsat etmoq",
+      },
+      {
+        word: "protest",
+        translation: "norozilik bildirmoq",
+      },
+      {
+        word: "sculpture",
+        translation: "haykal",
+      },
+      {
+        word: "tribe",
+        translation: "qabila",
+      },
+      {
+        word: "youth",
+        translation: "yoshlik payt",
+      },
+    ],
+    choosen: false,
+  },
+  {
+    name: "Essentials.2.7",
+    id: "7",
+    words: [
+      {
+        word: "basis",
+        translation: "tartib yo'nalish",
+      },
+      {
+        word: "biology",
+        translation: "biologiya",
+      },
+      {
+        word: "cage",
+        translation: "qafas",
+      },
+      {
+        word: "colleague",
+        translation: "hamkasb",
+      },
+      {
+        word: "colony",
+        translation: "mustamlaka, koloniya",
+      },
+      {
+        word: "debate",
+        translation: "muhokama qilmoq",
+      },
+      {
+        word: "depart",
+        translation: "jo'nab ketmoq",
+      },
+      {
+        word: "depress",
+        translation: "dilini xufton qilmoq",
+      },
+      {
+        word: "factual",
+        translation: "asosli, dalilga boy",
+      },
+      {
+        word: "fascinate",
+        translation: "maftun qilmoq, qiziqtirmoq",
+      },
+      {
+        word: "mission",
+        translation: "missiya, topshiriq",
+      },
+      {
+        word: "nevertheless",
+        translation: "shunga qaramay",
+      },
+      {
+        word: "occupation",
+        translation: "kasb",
+      },
+      {
+        word: "overseas",
+        translation: "okean orti",
+      },
+      {
+        word: "persuade",
+        translation: "ko'ndirmoq",
+      },
+      {
+        word: "route",
+        translation: "marshrut, yo'nalish",
+      },
+      {
+        word: "ruins",
+        translation: "xaroba",
+      },
+      {
+        word: "scholar",
+        translation: "bilimdon",
+      },
+      {
+        word: "significant",
+        translation: "muhim, ahamiyatli",
+      },
+      {
+        word: "volcano",
+        translation: "vulqon",
+      },
+    ],
+    choosen: false,
+  },
+  {
+    name: "Essentials.2.8"
+  }
 ];
 
 export { getData, data };

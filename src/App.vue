@@ -21,7 +21,6 @@ import Nav from "./components/Nav.vue";
 import Box from "./components/Box.vue";
 import List from "./components/List.vue";
 import Panel from "./components/Panel.vue";
-import { data } from "@/composables/getData.js";
 import { getData } from "@/composables/getData.js";
 
 export default {
@@ -41,14 +40,23 @@ export default {
     startTest($event) {
       this.choosenTopic = $event;
       this.fullWord = this.choosenTopic.words.shift();
-      this.word = this.fullWord[Math.floor(Math.random() * 2)];
+      this.word = this.fullWord['translation'];
     },
     nextWord() {
       if (!this.choosenTopic.words.length) {
         this.word = "THE END";
         return;
       }
-    console.log(getData() )
+      this.fullWord = this.choosenTopic.words.shift();
+      this.word = this.fullWord['translation'];
+    },
+    makeWordReversed() {
+      this.word =
+        this.fullWord['translation'] === this.word ? this.fullWord['word'] : this.fullWord['translation'];
+    },
+  },
+  mounted() {
+    
   },
   name: "App",
   components: {
