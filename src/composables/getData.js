@@ -640,7 +640,126 @@ const data = [
     choosen: false,
   },
   {
-    name: "Essentials.2.8"
+    name: "Essentials.2.8",
+    id: "8",
+    words: [
+      {
+        word: "broad",
+        translation: "keng, katta"
+      },
+      {
+        word: "bush",
+        translatiohn: "buta"
+      },
+      {
+        word: "capable",
+        translation: "qobiliyatli, o'quvli"
+      },
+      {
+        word: "cheat",
+        translation: "g'irromlik qilmoq"
+      },
+      {
+        word: "concentrate",
+        translation: "diqqatini jamlamoq"
+      },
+      {
+        word: "conclude",
+        translation: "deb xulosa qilmoq"
+      },
+      {
+        word: "confident",
+        translation: "o'ziga ishongan"
+      },
+      {
+        word: "considerable",
+        translation: "sezilarli, salmoqli"
+      },
+      {
+        word: "convey",
+        translation: "ifodalamoq"
+      },
+      {
+        word: "definite",
+        translation: "aniq, yaqqol"
+      },
+      {
+        word: "delight",
+        translation: "zavq, shavq"
+      },
+      {
+        word: "destination",
+        translation: "manzil"
+      },
+      {
+        word: "dictate",
+        translation: "aytib yozdirmoq"
+      },
+      {
+        word: "edge",
+        translation: "qirra, chet"
+      },
+      {
+        word: "path",
+        translation: "so'qmoq"
+      },
+      {
+        word: "resort",
+        translation: "asos qilib olmoq, asoslamoq"
+      },
+      {
+        word: "shadow",
+        translation: "soya"
+      },
+      {
+        word: "succeed",
+        translation: "muvaffaqiyat qozonmoq"
+      },
+      {
+        word: "suspect",
+        translation: "deb shubhalanmoq"
+      },
+      {
+        word: "valley",
+        translation: "vodiy"
+      },
+    ],
+    choosen: false,
+  },
+  {
+    name: "Essentials.2.9",
+    id: "9",
+    words: [
+      {
+        word: "admire",
+        translation: "qoyil qolmoq"
+      },
+      {
+        word: "aid",
+        translation: "yordam bermoq"
+      },
+      {
+        word: "attempt",
+        translation: "urinmoq, harakat qilmoq"
+      },
+      {
+        word: "authority",
+        translation: "vokolat, huquq"
+      },
+      {
+        word: "capital",
+        translation: "poytaxt"
+      },
+      {
+        word: "cooperate",
+        translation: "hamkorlik qilmoq"
+      },
+      {
+        word: "defend",
+        translation: "mudofaa qilmoq"
+      },
+    ],
+    choosen: false
   }
 ];
 
