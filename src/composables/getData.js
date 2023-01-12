@@ -287,7 +287,7 @@ const data = [
         translation: "qurol-yarog'",
       },
     ],
-    choosen: true,
+    choosen: false,
   },
   {
     name: "Essentials2.4",
@@ -899,6 +899,108 @@ const data = [
     ],
     choosen: false,
   },
+  {
+    name: "Essentials.2.11",
+    id: "11",
+    words: [
+      {
+        word: "admission",
+        translation: "ruxsat, kirish",
+      },
+      {
+        word: "astronomy",
+        translation: "astronomiya",
+      },
+      {
+        word: "blame",
+        translation: "ayblamoq",
+      },
+      {
+        word: "chemistry",
+        translation: "kimyo",
+      },
+      {
+        word: "despite",
+        translation: "ga qaramsdan",
+      },
+      {
+        word: "dinosaur",
+        translation: "dinozavr",
+      },
+      {
+        word: "exhibit",
+        translation: "eksponat",
+      },
+      {
+        word: "fame",
+        translation: "shon-shuhrat, obro'",
+      },
+      {
+        word: "forecast",
+        translation: "ob-havo ma'lumoti",
+      },
+      {
+        word: "genius",
+        translation: "juda aqlli, geniy",
+      },
+      {
+        word: "gentle",
+        translation: "muloyim, yuvosh",
+      },
+      {
+        word: "geography",
+        translation: "geografiya",
+      },
+      {
+        word: "iterface",
+        translation: "xalaqit bermoq",
+      },
+      {
+        word: "lightly",
+        translation: "muloyimlik bilan",
+      },
+      {
+        word: "principal",
+        translation: "maktab direktori",
+      },
+      {
+        word: "row",
+        translation: "qator, saf",
+      },
+      {
+        word: "shelf",
+        translation: "tokcha",
+      },
+      {
+        word: "spite",
+        translation: "out of spite - qasddan",
+      },
+      {
+        word: "super",
+        translation: "juda yaxshi",
+      },
+      {
+        word: "wet",
+        translation: "nam, xo'l",
+      },
+    ],
+    choosen: false,
+  },
+  {
+    name: "Essentails.2.12"
+    ,id: "12",
+    words: [
+      {
+        word: "abuse",
+        translation: " haqorat qlmoq, so'kmoq"
+      },
+      {
+        word: "afford",
+        translation: "" 
+      },
+    ],
+    choosen: false
+  }
 ];
 
 export { getData, data };
