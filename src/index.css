@@ -10,15 +10,19 @@ body {
   background-color: #151515;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+}
+
+.d-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
   width: 100vw;
   max-width: 800px;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 5%;
   gap: 20px;
   flex-direction: column;
@@ -33,9 +37,6 @@ body {
 
 .container .box {
   min-height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   transition: 250ms;
 }
 
@@ -52,10 +53,7 @@ body {
   gap: 30px;
   overflow-y: auto;
   margin: 8px 8px;
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  align-items: center;
   padding-top: 20px;
 }
 
@@ -64,9 +62,6 @@ body {
   height: 200px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 24px;
   color: #fff;
   cursor: pointer;
@@ -140,38 +135,54 @@ body {
 
 .list {
   padding: 10px 15px;
+  max-height: 50%;
+  position: relative;
+  max-width: 800px;
+  width: 95%;
+  position: absolute;
+  height: 50%;
+  backdrop-filter: blur(20px);
+  overflow: auto;
 }
 
 .list li {
   width: 100%;
-  border: 1px solid red;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 10px 15px;
   display: inline-block;
   color: #fff;
   font-size: 1.1rem;
   border-radius: 12px;
-  border-color: rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 8px;
 }
 
 .list[data-switched="off"] {
-  transform-origin: right;
-  transform: scaleX(0);
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.list .close{
   position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  background-color: red;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding-bottom: 2px;
 }
 
 .list[data-switched="on"] {
-  position: absolute;
-  max-width: 800px;
-  width: 95%;
-  height: 50%;
-  backdrop-filter: blur(20px);
   z-index: 4;
-  overflow: auto;
 }
 
 @media screen and (max-width: 767px) {
+  .list {
+    max-height: 100%;
+  }
   .list[data-switched="on"] {
     height: 100%;
   }

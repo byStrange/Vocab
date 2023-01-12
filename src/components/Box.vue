@@ -1,12 +1,12 @@
 <template>
-  <div class="box">
+  <div class="box d-center">
     <div class="content" ref="word" v-if="showWord">
       <span> {{ wordFromChoosenTopic }}</span>
     </div>
-    <div class="topics" ref="topics" v-if="!showWord">
+    <div class="topics d-center" ref="topics" v-if="!showWord">
       <template v-for="topic in topics" :key="topic.id">
         <div
-          class="topic"
+          class="topic d-center"
           :class="{ choosen: topic.choosen }"
           @click="selectTopic(topic.id)"
           :data-id="topic.id"

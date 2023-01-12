@@ -8,7 +8,6 @@ const getData = () => {
   const load = async () => {
     try {
       const res = await projectFirestore.collection("topics").get();
-
       const data = [];
       data.forEach((e) => {
         projectFirestore.collection("topics").add(e);
@@ -870,31 +869,31 @@ const data = [
         translation: "qarshilik ko'rsatmoq",
       },
       {
-        name: "reveal",
+        word: "reveal",
         translation: "ko'rsatmoq",
       },
       {
-        name: "rid",
+        word: "rid",
         translation: "xalos qilmoq",
       },
       {
-        name: "sword",
+        word: "sword",
         translation: "qilich, shamshir",
       },
       {
-        name: "tale",
+        word: "tale",
         translation: "ertak, hikoya",
       },
       {
-        name: "trap",
+        word: "trap",
         translation: "tutqunlikda saqlamoq",
       },
       {
-        name: "trial",
+        word: "trial",
         translation: "sud jarayoni",
       },
       {
-        name: "violent",
+        word: "violent",
         translation: "zo'ravon, quturgan",
       },
     ],

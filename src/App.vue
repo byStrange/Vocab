@@ -1,5 +1,5 @@
 <template>
-  <div class="container" :data-id="fullWord">
+  <div class="container d-center" :data-id="fullWord">
     <Nav
       @showList="data_switched = 'on'"
       :data_switched="data_switched"
@@ -12,7 +12,7 @@
       :wordFromChoosenTopic="word"
     />
     <Panel @nextBtnClick="nextWord" @showBtnClick="makeWordReversed" />
-    <List :data_switched="data_switched" />
+    <List :data_switched="data_switched" @closeListModal="closeListModal"/>
   </div>
 </template>
 
@@ -54,6 +54,9 @@ export default {
       this.word =
         this.fullWord['translation'] === this.word ? this.fullWord['word'] : this.fullWord['translation'];
     },
+    closeListModal() {
+      this.data_switched = "off"
+    }
   },
   mounted() {
     
