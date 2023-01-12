@@ -645,83 +645,83 @@ const data = [
     words: [
       {
         word: "broad",
-        translation: "keng, katta"
+        translation: "keng, katta",
       },
       {
         word: "bush",
-        translatiohn: "buta"
+        translatiohn: "buta",
       },
       {
         word: "capable",
-        translation: "qobiliyatli, o'quvli"
+        translation: "qobiliyatli, o'quvli",
       },
       {
         word: "cheat",
-        translation: "g'irromlik qilmoq"
+        translation: "g'irromlik qilmoq",
       },
       {
         word: "concentrate",
-        translation: "diqqatini jamlamoq"
+        translation: "diqqatini jamlamoq",
       },
       {
         word: "conclude",
-        translation: "deb xulosa qilmoq"
+        translation: "deb xulosa qilmoq",
       },
       {
         word: "confident",
-        translation: "o'ziga ishongan"
+        translation: "o'ziga ishongan",
       },
       {
         word: "considerable",
-        translation: "sezilarli, salmoqli"
+        translation: "sezilarli, salmoqli",
       },
       {
         word: "convey",
-        translation: "ifodalamoq"
+        translation: "ifodalamoq",
       },
       {
         word: "definite",
-        translation: "aniq, yaqqol"
+        translation: "aniq, yaqqol",
       },
       {
         word: "delight",
-        translation: "zavq, shavq"
+        translation: "zavq, shavq",
       },
       {
         word: "destination",
-        translation: "manzil"
+        translation: "manzil",
       },
       {
         word: "dictate",
-        translation: "aytib yozdirmoq"
+        translation: "aytib yozdirmoq",
       },
       {
         word: "edge",
-        translation: "qirra, chet"
+        translation: "qirra, chet",
       },
       {
         word: "path",
-        translation: "so'qmoq"
+        translation: "so'qmoq",
       },
       {
         word: "resort",
-        translation: "asos qilib olmoq, asoslamoq"
+        translation: "asos qilib olmoq, asoslamoq",
       },
       {
         word: "shadow",
-        translation: "soya"
+        translation: "soya",
       },
       {
         word: "succeed",
-        translation: "muvaffaqiyat qozonmoq"
+        translation: "muvaffaqiyat qozonmoq",
       },
       {
         word: "suspect",
-        translation: "deb shubhalanmoq"
+        translation: "deb shubhalanmoq",
       },
       {
         word: "valley",
-        translation: "vodiy"
+        translation: "vodiy",
       },
     ],
     choosen: false,
@@ -732,35 +732,174 @@ const data = [
     words: [
       {
         word: "admire",
-        translation: "qoyil qolmoq"
+        translation: "qoyil qolmoq",
       },
       {
         word: "aid",
-        translation: "yordam bermoq"
+        translation: "yordam bermoq",
       },
       {
         word: "attempt",
-        translation: "urinmoq, harakat qilmoq"
+        translation: "urinmoq, harakat qilmoq",
       },
       {
         word: "authority",
-        translation: "vokolat, huquq"
+        translation: "vokolat, huquq",
       },
       {
         word: "capital",
-        translation: "poytaxt"
+        translation: "poytaxt",
       },
       {
         word: "cooperate",
-        translation: "hamkorlik qilmoq"
+        translation: "hamkorlik qilmoq",
       },
       {
         word: "defend",
-        translation: "mudofaa qilmoq"
+        translation: "mudofaa qilmoq",
+      },
+      {
+        word: "destruction",
+        translation: "vayrona",
+      },
+      {
+        word: "disorder",
+        translation: "tartibsizlik",
+      },
+      {
+        word: "division",
+        translation: "bo'lish taqsimlash",
+      },
+      {
+        word: "enable",
+        translation: "imkoniyat bermoq",
+      },
+      {
+        word: "frustrate",
+        translation: "umidsizlantirmoq",
+      },
+      {
+        word: "govern",
+        translation: "nazorat qilmoq, boshqarmoq",
+      },
+      {
+        word: "plenty",
+        translation: "yetarli miqdor",
+      },
+      {
+        word: "relieve",
+        translation: "og'irini yengillashtirmoq",
+      },
+      {
+        word: "reputation",
+        translation: "obro",
+      },
+      {
+        word: "royal",
+        translation: "qirollik",
+      },
+      {
+        word: "slave",
+        translation: "qul",
+      },
+      {
+        word: "struggle",
+        translation: "kurashmoq, yoqlashmoq",
+      },
+      {
+        word: "stupid",
+        translation: "ahmoq, tentak",
       },
     ],
-    choosen: false
-  }
+    choosen: false,
+  },
+  {
+    name: "Essentials.2.10",
+    id: "10",
+    words: [
+      {
+        word: "citizen",
+        translation: "fuqaro",
+      },
+      {
+        word: "council",
+        translation: "kengash, konsullik",
+      },
+      {
+        word: "declare",
+        translation: "aytmoq, bildirmoq",
+      },
+      {
+        word: "enormous",
+        translation: "ulkan, juda katta",
+      },
+      {
+        word: "extraordinary",
+        translation: "turfa, g'ayritabiiy",
+      },
+      {
+        word: "fog",
+        translation: "tuman",
+      },
+      {
+        word: "funeral",
+        translation: "dafn marosimi",
+      },
+      {
+        word: "giant",
+        translation: "bahaybat, gigant",
+      },
+      {
+        word: "impression",
+        translation: "taassurot",
+      },
+      {
+        word: "income",
+        translation: "daromad",
+      },
+      {
+        word: "mad",
+        translation: "badjahl, jahldor",
+      },
+      {
+        word: "ought",
+        translation: "kerak, lozim",
+      },
+      {
+        word: "resist",
+        translation: "qarshilik ko'rsatmoq",
+      },
+      {
+        name: "reveal",
+        translation: "ko'rsatmoq",
+      },
+      {
+        name: "rid",
+        translation: "xalos qilmoq",
+      },
+      {
+        name: "sword",
+        translation: "qilich, shamshir",
+      },
+      {
+        name: "tale",
+        translation: "ertak, hikoya",
+      },
+      {
+        name: "trap",
+        translation: "tutqunlikda saqlamoq",
+      },
+      {
+        name: "trial",
+        translation: "sud jarayoni",
+      },
+      {
+        name: "violent",
+        translation: "zo'ravon, quturgan",
+      },
+    ],
+    choosen: false,
+  },
 ];
 
 export { getData, data };

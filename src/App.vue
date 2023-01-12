@@ -39,7 +39,7 @@ export default {
     },
     startTest($event) {
       this.choosenTopic = $event;
-      this.fullWord = this.choosenTopic.words.shift();
+      this.fullWord = this.choosenTopic.words[0];
       this.word = this.fullWord['translation'];
     },
     nextWord() {
