@@ -987,20 +987,22 @@ const data = [
     choosen: false,
   },
   {
-    name: "Essentails.2.12"
-    ,id: "12",
+    name: "Essentails.2.12",
+    id: "12",
     words: [
       {
         word: "abuse",
-        translation: " haqorat qlmoq, so'kmoq"
+        translation: " haqorat qlmoq, so'kmoq",
+        explanation : "to abuse someone or something means to hurt them on purpose",
+        example: "The mean man abused his dog when it barked too loudly"
       },
       {
         word: "afford",
-        translation: "" 
+        translation: "",
       },
     ],
-    choosen: false
-  }
+    choosen: false,
+  },
 ];
 
 export { getData, data };
