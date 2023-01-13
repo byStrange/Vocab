@@ -44,6 +44,7 @@ body {
   font-size: 3rem;
   text-shadow: 2px 3px rgba(255, 255, 255, 0);
   color: #fff;
+  text-align: center;
 }
 
 .container .box .topics {

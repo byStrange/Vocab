@@ -993,12 +993,19 @@ const data = [
       {
         word: "abuse",
         translation: " haqorat qlmoq, so'kmoq",
-        explanation : "to abuse someone or something means to hurt them on purpose",
-        example: "The mean man abused his dog when it barked too loudly"
+        details: {
+          explanation:
+            "to abuse someone or something means to hurt them on purpose",
+          example: "The mean man abused his dog when it barked too loudly",
+        },
       },
       {
         word: "afford",
-        translation: "",
+        translation: "qurbi yetmoq",
+        details :{
+          explanation: "to afford something means you have enough money to pay for it",
+          example: "I've been saving my money, so I can afford to buy a new bike"
+        }
       },
     ],
     choosen: false,

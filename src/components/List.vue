@@ -3,11 +3,23 @@
     <div class="close d-center" @click="close">
       <span>&times;</span>
     </div>
-    <ul v-for="i in topics" :key="i.id">
-      <template v-if="i.choosen">
-        <li v-for="w in i.words" :key="w"><span>{{ w.word  }}</span> - <span>{{ w.translation }}</span></li>
-      </template>
+    <template v-for="i in topics" :key="i.id">
+    <ul v-if="i.choosen">
+        <li v-for="w in i.words" :key="w">
+          <div class="word">
+            <span>{{ w.word  }}</span> - <span>{{ w.translation }}</span>
+          </div>  
+          <div class="details">
+            <span  v-if="w.details.explanation">
+              {{  w.details.explanation  }}
+            </span>
+            <span v-if="w.details.example">
+              {{  w.details.example  }}
+            </span>
+          </div>
+        </li>
     </ul>
+  </template>
   </div>
 </template>
 
