@@ -5,14 +5,14 @@
     </div>
     <template v-for="i in topics" :key="i.id">
     <ul v-if="i.choosen">
-        <li v-for="w in i.words" :key="w">
+        <li v-for="w in i.words" :key="w" @click="toggleDetail($event)" :ref="'word' + w">
           <div class="word">
             <span>{{ w.word  }}</span> - <span>{{ w.translation }}</span>
           </div>  
-          <div class="details">
-            <span  v-if="w.details.explanation">
+          <div class="details" :closed="false">
+            <i  v-if="w.details.explanation">
               {{  w.details.explanation  }}
-            </span>
+            </i>
             <span v-if="w.details.example">
               {{  w.details.example  }}
             </span>
@@ -36,6 +36,9 @@ export default {
     close() {
         this.$emit("closeListModal")
     },
+    toggleDetail($event) {
+      $event.currentTarget.querySelector(".details").classList.toggle("closed")
+    }
   },
   props: {
     data_switched: {
