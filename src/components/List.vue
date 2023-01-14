@@ -37,7 +37,7 @@ export default {
         this.$emit("closeListModal")
     },
     toggleDetail($event) {
-      $event.currentTarget.querySelector(".details").classList.toggle("closed")
+      $event.currentTarget.querySelector(".details").classList.toggle ("closed")
     }
   },
   props: {
