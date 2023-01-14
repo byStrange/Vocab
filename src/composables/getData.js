@@ -1202,7 +1202,7 @@ const data = [
       },
       {
         word: "bush",
-        translatiohn: "buta",
+        translation: "buta",
       },
       {
         word: "capable",
