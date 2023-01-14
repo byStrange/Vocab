@@ -10,10 +10,10 @@
             <span>{{ w.word  }}</span> - <span>{{ w.translation }}</span>
           </div>  
           <div class="details closed">
-            <i  v-if="w.details.  explanation">
+            <i  v-if="w?.details?.explanation">
               {{  w.details.explanation  }}
             </i>
-            <span v-if="w.details.example">
+            <span v-if="w?.details?.example">
               {{  w.details.example  }}
             </span>
           </div>
