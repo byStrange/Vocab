@@ -203,187 +203,182 @@ const data = [
     name: "Essentials.2.2",
     id: "2",
     words: [
-      [
-        {
-          word: "bring",
-          translation: "olib kelmoq",
-          details: {
-            explanation:
-              "To bring means to take someone or something to a person or a place",
-            example: "Oscar will bring in all the boxes",
-          },
+      {
+        word: "bring",
+        translation: "olib kelmoq",
+        details: {
+          explanation:
+            "To bring means to take someone or something to a person or a place",
+          example: "Oscar will bring in all the boxes",
         },
-        {
-          word: "castle",
-          translation: "qasr",
-          details: {
-            explanation:
-              "A castle is a building with strong walls where royalty usually lives",
-            example: "The castle was built many years ago",
-          },
+      },
+      {
+        word: "castle",
+        translation: "qasr",
+        details: {
+          explanation:
+            "A castle is a building with strong walls where royalty usually lives",
+          example: "The castle was built many years ago",
         },
-        {
-          word: "command",
-          translation: "buyruq bermoq",
-          details: {
-            explanation: "To command someone is to tell them to do something",
-            example: "The general commanded his army to attack",
-          },
+      },
+      {
+        word: "command",
+        translation: "buyruq bermoq",
+        details: {
+          explanation: "To command someone is to tell them to do something",
+          example: "The general commanded his army to attack",
         },
-        {
-          word: "counsel",
-          translation: "maslahat bermoq",
-          details: {
-            explanation:
-              "To counsel someone is to listen and give advice about a problem",
-            example: "The teacher counseled the girl about her troubles",
-          },
+      },
+      {
+        word: "counsel",
+        translation: "maslahat bermoq",
+        details: {
+          explanation:
+            "To counsel someone is to listen and give advice about a problem",
+          example: "The teacher counseled the girl about her troubles",
         },
-        {
-          word: "ensure",
-          translation: "ta'minlamoq",
-          details: {
-            explanation: "To ensure is to make certain that something happens",
-            example: "Eating good food ensures that we stay healthy",
-          },
+      },
+      {
+        word: "ensure",
+        translation: "ta'minlamoq",
+        details: {
+          explanation: "To ensure is to make certain that something happens",
+          example: "Eating good food ensures that we stay healthy",
         },
-        {
-          word: "explosion",
-          translation: "portlash",
-          details: {
-            explanation:
-              "An explosion is a violent burst, usually with a loud sound",
-            example: "A nuclear explosion can cause great damage",
-          },
+      },
+      {
+        word: "explosion",
+        translation: "portlash",
+        details: {
+          explanation:
+            "An explosion is a violent burst, usually with a loud sound",
+          example: "A nuclear explosion can cause great damage",
         },
-        {
-          word: "jewellery",
-          translation: "qimmatbaho tosh",
-          details: {
-            explanation:
-              "Jewelry is something that people wear like earrings or necklaces",
-            example:
-              "The woman looked beautiful with her nice dress and jewelry",
-          },
+      },
+      {
+        word: "jewellery",
+        translation: "qimmatbaho tosh",
+        details: {
+          explanation:
+            "Jewelry is something that people wear like earrings or necklaces",
+          example: "The woman looked beautiful with her nice dress and jewelry",
         },
-        {
-          word: "land",
-          translation: "qo'nmoq",
-          details: {
-            explanation:
-              "To land means to come to the ground usually from a ship or aircraft",
-            example: "The parachutist landed safely on the ground",
-          },
+      },
+      {
+        word: "land",
+        translation: "qo'nmoq",
+        details: {
+          explanation:
+            "To land means to come to the ground usually from a ship or aircraft",
+          example: "The parachutist landed safely on the ground",
         },
-        {
-          word: "meteor",
-          translation: "meteorit",
-          details: {
-            explanation:
-              "A meteor is a rock from outer space that falls to Earth",
-            example: "We saw a meteor in the sky last night",
-          },
+      },
+      {
+        word: "meteor",
+        translation: "meteorit",
+        details: {
+          explanation:
+            "A meteor is a rock from outer space that falls to Earth",
+          example: "We saw a meteor in the sky last night",
         },
-        {
-          word: "monster",
-          translation: "maxluq",
-          details: {
-            explanation:
-              "A monster is any imaginary frightening creature that looks strange",
-            example: "The monster scared everyone in the village",
-          },
+      },
+      {
+        word: "monster",
+        translation: "maxluq",
+        details: {
+          explanation:
+            "A monster is any imaginary frightening creature that looks strange",
+          example: "The monster scared everyone in the village",
         },
-        {
-          word: "northern",
-          translation: "shimoliy",
-          details: {
-            explanation:
-              "If something is northern, it is in the direction of north",
-            example: "It is much colder in northern countries than it is here",
-          },
+      },
+      {
+        word: "northern",
+        translation: "shimoliy",
+        details: {
+          explanation:
+            "If something is northern, it is in the direction of north",
+          example: "It is much colder in northern countries than it is here",
         },
-        {
-          word: "remote",
-          translation: "olis, uzoq",
-          details: {
-            explanation:
-              "If something is remote, it is very far away and difficult to get to.",
-            example: "It look many days to get to the remote island",
-          },
+      },
+      {
+        word: "remote",
+        translation: "olis, uzoq",
+        details: {
+          explanation:
+            "If something is remote, it is very far away and difficult to get to.",
+          example: "It look many days to get to the remote island",
         },
-        {
-          word: "southern",
-          translation: "janubiy",
-          details: {
-            explanation:
-              "If something is southern, it is the direction of south",
-            example:
-              "Taegu is located in the southern part of the Korean peninsula",
-          },
+      },
+      {
+        word: "southern",
+        translation: "janubiy",
+        details: {
+          explanation: "If something is southern, it is the direction of south",
+          example:
+            "Taegu is located in the southern part of the Korean peninsula",
         },
-        {
-          word: "statue",
-          translation: "haykal",
-          details: {
-            explanation:
-              "A statue is an image of a person or animal made of stone or metal",
-            example: "I saw a beautiful statue of a lion today",
-          },
+      },
+      {
+        word: "statue",
+        translation: "haykal",
+        details: {
+          explanation:
+            "A statue is an image of a person or animal made of stone or metal",
+          example: "I saw a beautiful statue of a lion today",
         },
-        {
-          word: "steam",
-          translation: "bug'",
-          details: {
-            explanation:
-              "Steam is water that has become hot and has turned into a misty gas",
-            example: "We could see the steam rise from the boiling water",
-          },
+      },
+      {
+        word: "steam",
+        translation: "bug'",
+        details: {
+          explanation:
+            "Steam is water that has become hot and has turned into a misty gas",
+          example: "We could see the steam rise from the boiling water",
         },
-        {
-          word: "submit",
-          translation: "bo'ysunmoq, aytganini qilmoq",
-          details: {
-            explanation:
-              "To submit to someone is to agree to do what they tell you to do",
-            example:
-              "She submitted to her mother's wishes and did her homework",
-          },
+      },
+      {
+        word: "submit",
+        translation: "bo'ysunmoq, aytganini qilmoq",
+        details: {
+          explanation:
+            "To submit to someone is to agree to do what they tell you to do",
+          example: "She submitted to her mother's wishes and did her homework",
         },
-        {
-          word: "temple",
-          translation: "ibodatxona",
-          details: {
-            explanation:
-              "A temple is a building that is used for religious purposes",
-            example: "The people visited the temple to pray",
-          },
+      },
+      {
+        word: "temple",
+        translation: "ibodatxona",
+        details: {
+          explanation:
+            "A temple is a building that is used for religious purposes",
+          example: "The people visited the temple to pray",
         },
-        {
-          word: "upper",
-          translation: "yuqori, ustki",
-          details: {
-            explanation: "Upper means higher in position or place",
-            example: "A hone's attic is at the upper part of the structure",
-          },
+      },
+      {
+        word: "upper",
+        translation: "yuqori, ustki",
+        details: {
+          explanation: "Upper means higher in position or place",
+          example: "A hone's attic is at the upper part of the structure",
         },
-        {
-          word: "weed",
-          translation: "begona o't",
-          details: {
-            explanation:
-              "A weed is a plant, especially one that is not useful or wanted",
-            example: "The yard of the house was full of ugly weeds",
-          },
+      },
+      {
+        word: "weed",
+        translation: "begona o't",
+        details: {
+          explanation:
+            "A weed is a plant, especially one that is not useful or wanted",
+          example: "The yard of the house was full of ugly weeds",
         },
-        {
-          word: "wing",
-          translation: "qanot",
-          details: {
-            explanation: "A wing is the part of an animal that lets it fly",
-            example: "The bird used its wings to fly across the water",
-          },
+      },
+      {
+        word: "wing",
+        translation: "qanot",
+        details: {
+          explanation: "A wing is the part of an animal that lets it fly",
+          example: "The bird used its wings to fly across the water",
         },
-      ],
+      },
     ],
     choosen: false,
   },
