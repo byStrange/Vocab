@@ -15,8 +15,6 @@ const getData = () => {
       res.docs.forEach((doc) => {
         data.value.push(doc.data());
       });
-      console.log(data.value);
-      console.log(res);
     } catch (err) {
       error.value = err.message;
       console.log(error.value);
@@ -937,82 +935,177 @@ const data = [
       {
         word: "abroad",
         translation: "xorij, chet el",
+        details: {
+          explanation:
+            "If someone goes or travels abroad, they go to another country.",
+          example: "My brother wants to go abroad next year.",
+        },
       },
       {
         word: "anger",
         translation: "jahlini chiqarmoq",
+        details: {
+          explanation: "To anger someone is to make them mad.",
+          example: "It angers me when people are rude.",
+        },
       },
       {
         word: "bride",
         translation: "kelinchak",
+        details: {
+          explanation:
+            "A bride is a woman who is getting married or has just gotten married.",
+          example: "The bride looked beautiful in her wedding dress.",
+        },
       },
       {
         word: "brief",
         translation: "qisqa",
+        details: {
+          explanation: "If something is brief, it only lasts fora short time.",
+          example: "The meeting this afternoon was very brief.",
+        },
       },
       {
         word: "chase",
         translation: "quvlamoq, quvmoq",
+        details: {
+          explanation:
+            "To chase someone or something is to follow them in order to catch them",
+          example: "I was chased by an angry native.",
+        },
       },
       {
         word: "disappoint",
         translation: "hafa qilmoq",
+        details: {
+          explanation: "To disappoint is to make one feel sad or unsatisfied.",
+          example:
+            "I do not want to disappoint my family, so I try to do well at school.",
+        },
       },
       {
         word: "dive",
         translation: "sho'ng'imoq",
+        details: {
+          explanation: "To dive is to jump into water.",
+          example: "I will dive into the lake once we get there.",
+        },
       },
       {
         word: "exchange",
         translation: "ayriboshlamoq",
+        details: {
+          explanation:
+            "To exchange means to give something for another thing in return.",
+          example: "I exchanged my foreign money for American dollars.",
+        },
       },
       {
         word: "favor",
         translation: "yordam, muruvvat",
+        details: {
+          explanation: "A favor is something you do for someone to help them.",
+          example: "Can you do me a favor and turn off the lights?",
+        },
       },
       {
         word: "fee",
         translation: "to'lov, badal",
+        details: {
+          explanation:
+            "A fee is an amount of money that a person or company asks for a service.",
+          example: "I had to pay an hourly fee to speak with my lawyer.",
+        },
       },
       {
         word: "forever",
         translation: "abadiy",
+        details: {
+          explanation:
+            "If something lasts forever, it means it lasts for all time.",
+          example:
+            "The young couple promised that they would love each other forever",
+        },
       },
       {
         word: "guy",
         translation: "erkak kishi",
+        details: {
+          explanation: "A guy is an informal way to call a man.",
+          example: "The guy at the flower shop was really helpful today.",
+        },
       },
       {
         word: "lovely",
         translation: "yoqimli, suyukli",
+        details: {
+          explanation:
+            "If people or things are lovely, they are good-looking or beautiful",
+          example: "The trees look lovely in the fall.",
+        },
       },
       {
         word: "mood",
         translation: "kayfiyat",
+        details: {
+          explanation: "A mood is the way someone is feeling.",
+          example: "I am in a good mood because I did well on my math test.",
+        },
       },
       {
         word: "palace",
         translation: "qasr, saroy",
+        details: {
+          explanation:
+            "A palace is a very large building. It is often the home of a royal family.",
+          example: "The king and queen live in a beautiful palace.",
+        },
       },
       {
         word: "permit",
         translation: "ruxsat etmoq",
+        details: {
+          explanation: "To permit something is to let someone do it.",
+          example:
+            "I was sick, so my mother permitted me to stay home from school.",
+        },
       },
       {
         word: "protest",
         translation: "norozilik bildirmoq",
+        details: {
+          explanation:
+            "To protest something is to argue about it with someone.",
+          example: "The people protested the decision of the president.",
+        },
       },
       {
         word: "sculpture",
         translation: "haykal",
+        details: {
+          explanation:
+            "A sculpture is a piece of art that is made from wood, clay, or stone.",
+          example: "I/I/e saw an old sculpture of Buddha at the museum.",
+        },
       },
       {
         word: "tribe",
         translation: "qabila",
+        details: {
+          explanation:
+            "A tribe is a group of people who live in the same culture.",
+          example:
+            "There’s a small tribe of people who live in the mountains of Spain.",
+        },
       },
       {
         word: "youth",
         translation: "yoshlik payt",
+        details: {
+          explanation: "Youth is a time in people’s lives when they are young.",
+          example: "My mother wanted to be a nurse in her youth.",
+        },
       },
     ],
     choosen: false,
