@@ -9,7 +9,7 @@
           <div class="word">
             <span>{{ w.word  }}</span> - <span>{{ w.translation }}</span>
           </div>  
-          <div class="details" :closed="true">
+          <div class="details closed">
             <i  v-if="w.details.  explanation">
               {{  w.details.explanation  }}
             </i>
