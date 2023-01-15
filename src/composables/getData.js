@@ -1112,82 +1112,175 @@ const data = [
       {
         word: "basis",
         translation: "tartib yo'nalish",
+        details: {
+          explanation: "To do something on time's basis is how often you do it",
+          example: "My grandfather gets his hearing checked on a yearly basis",
+        },
       },
       {
         word: "biology",
         translation: "biologiya",
+        details: {
+          explanation: "Biology is the study of living things",
+          example: "We learned about the human heart in biology class",
+        },
       },
       {
         word: "cage",
         translation: "qafas",
+        details: {
+          explanation:
+            "A cage is something that holds an animal so it cannot leave",
+          example: "We put the parrots in their cage at night",
+        },
       },
       {
         word: "colleague",
         translation: "hamkasb",
+        details: {
+          explanation: "A colleague is somebody you work with",
+          example: "My colleague helped me finish the job",
+        },
       },
       {
         word: "colony",
         translation: "mustamlaka, koloniya",
+        details: {
+          explanation: "A colomy is a country controlled by another country",
+          example: "The USA was at one time a colony of Great Britain",
+        },
       },
       {
         word: "debate",
         translation: "muhokama qilmoq",
+        details: {
+          explanation:
+            "To debate is to serously discuss something with someone",
+          example: "The husband and wife debated over which TV to buy",
+        },
       },
       {
         word: "depart",
         translation: "jo'nab ketmoq",
+        details: {
+          explanation:
+            "To depart is to leave some place so you can go to another place",
+          example: "The plane departed for Italy at 3:00 this afternoon",
+        },
       },
       {
         word: "depress",
         translation: "dilini xufton qilmoq",
+        details: {
+          explanation: "To depress someone is to make them sad",
+          example: "The bad news from work depressed the man",
+        },
       },
       {
         word: "factual",
         translation: "asosli, dalilga boy",
+        details: {
+          explanation: "When something is factual, it's true",
+          example: "John learns about history from factual books",
+        },
       },
       {
         word: "fascinate",
         translation: "maftun qilmoq, qiziqtirmoq",
+        details: {
+          explanation:
+            "To fascinate someone is to make them really like something",
+          example: "The kitten was fascinated by the ball of yarn",
+        },
       },
       {
         word: "mission",
         translation: "missiya, topshiriq",
+        details: {
+          explanation:
+            "A mission is an important job that is sometimes far away",
+          example: "The woman's mission was to help sick people",
+        },
       },
       {
         word: "nevertheless",
         translation: "shunga qaramay",
+        details: {
+          explanation:
+            "You use nevertheless to shoe that something goes against a fact",
+          example:
+            "He is usually friendly. Nevertheless, he wasn't this afternoon",
+        },
       },
       {
         word: "occupation",
         translation: "kasb",
+        details: {
+          explanation: "An occupation is a person's job",
+          example: "My father's occupation is a dentist",
+        },
       },
       {
         word: "overseas",
         translation: "okean orti",
+        details: {
+          explanation:
+            "If you go overseas, you got to country on the other side of on ocean",
+          example: "John often goes overseas for vacations",
+        },
       },
       {
         word: "persuade",
         translation: "ko'ndirmoq",
+        details: {
+          explanation:
+            "To persuade someone is to make them agree to do something",
+          example: "The children persuaded their parents to buy them gifts",
+        },
       },
       {
         word: "route",
         translation: "marshrut, yo'nalish",
+        details: {
+          explanation: "A route is the way you go from one place to another",
+          example: "I saw many new houses along the route to the city",
+        },
       },
       {
         word: "ruins",
         translation: "xaroba",
+        details: {
+          explanation: "Runis are old buildings that are not used anymore",
+          example: "I visited some interesting ruins in Greece",
+        },
       },
       {
         word: "scholar",
         translation: "bilimdon",
+        details: {
+          explanation:
+            "A scholar is a person who studies something and knows much about it",
+          example: "The scholar knew much about art history",
+        },
       },
       {
         word: "significant",
         translation: "muhim, ahamiyatli",
+        details: {
+          explanation:
+            "When someone or something is significant, they are important",
+          example:
+            "I read many significant novels as a literature major in university",
+        },
       },
       {
         word: "volcano",
         translation: "vulqon",
+        details: {
+          explanation:
+            "A volcano is a mountain with a hole on top where hot liquid comes out",
+          example: "When the volcane erupted, smoke and heat filled the air",
+        },
       },
     ],
     choosen: false,
@@ -1199,82 +1292,186 @@ const data = [
       {
         word: "broad",
         translation: "keng, katta",
+        details: {
+          explanation: "If something is broad, it is wide",
+          example: "The river is very long and broad",
+        },
       },
       {
         word: "bush",
         translation: "buta",
+        details: {
+          explanation:
+            "A bush is a plant with many thin branches. It is smaller thna a tree",
+          example: "My dad and I planted some small bushes around the house",
+        },
       },
       {
         word: "capable",
         translation: "qobiliyatli, o'quvli",
+        details: {
+          explanation:
+            "If somone or something is capable of something, they can do it",
+          example: "The Olypmic athlete is capable of lifting a lot if weight",
+        },
       },
       {
         word: "cheat",
         translation: "g'irromlik qilmoq",
+        details: {
+          explanation:
+            "To cheat is to bo dishonest so that you can win or do well",
+          example: "They cheated on the test by sharing answers",
+        },
       },
       {
         word: "concentrate",
         translation: "diqqatini jamlamoq",
+        details: {
+          explanation:
+            "To concentrate on someone or something is to give your full attention",
+          example:
+            "I could not conventrate on my homework because the room was so loud",
+        },
       },
       {
         word: "conclude",
         translation: "deb xulosa qilmoq",
+        details: {
+          explanation:
+            "To conclude is to arrive at a logical end by look at evidence",
+          example:
+            "I saw crumbs on my dog's face, so I concluded that he ate my cookie",
+        },
       },
       {
         word: "confident",
         translation: "o'ziga ishongan",
+        details: {
+          explanation:
+            "Condifdent means that one believes they can do something without failing",
+          example:
+            "She was confident she could climb the mountain due to her training",
+        },
       },
       {
         word: "considerable",
         translation: "sezilarli, salmoqli",
+        details: {
+          explanation:
+            "If something is considerable, it is large in size, amount or extent",
+          example: "They paid a considerable amount of money for that car",
+        },
       },
       {
         word: "convey",
         translation: "ifodalamoq",
+        details: {
+          explanation: "To onvey is to communicate or make ideas known",
+          example:
+            "That picture of a crying child conveys a feeling of sadness",
+        },
       },
       {
         word: "definite",
         translation: "aniq, yaqqol",
+        details: {
+          explanation:
+            "If something is definite, it is certain or sure to be true.",
+          example:
+            "There is a definite connection between hard work and success.",
+        },
       },
       {
         word: "delight",
         translation: "zavq, shavq",
+        details: {
+          explanation:
+            "There is a definite connection between hard work and success.",
+          example: "He felt such delight after getting a promotion at work.",
+        },
       },
       {
         word: "destination",
         translation: "manzil",
+        details: {
+          explanation:
+            "A destination is the place where someone or something is going to.",
+          example: "The destination of this plane is Munich, Germany",
+        },
       },
       {
         word: "dictate",
         translation: "aytib yozdirmoq",
+        details: {
+          explanation:
+            "To dictate something is to read it aloud so it can be written down.",
+          example:
+            "He dictated his speech so his secretary could write it down",
+        },
       },
       {
         word: "edge",
         translation: "qirra, chet",
+        details: {
+          explanation:
+            "The edge of something is the part of it that is farthest from the center.",
+          example: "He ran to the edge of the cliff.",
+        },
       },
       {
         word: "path",
         translation: "so'qmoq",
+        details: {
+          explanation:
+            "A path is a way from one place to another that people can walk along.",
+          example: "We followed a path through the woods.",
+        },
       },
       {
         word: "resort",
         translation: "asos qilib olmoq, asoslamoq",
+        details: {
+          explanation:
+            "To resort to something is to depend on it in order to solve a problem",
+          example: "I hope they don’t resort to violence to end the argument.",
+        },
       },
       {
         word: "shadow",
         translation: "soya",
+        details: {
+          explanation:
+            "A shadow is the dark area that is made when something blocks light.",
+          example: "The man’s shadow was taller than he was.",
+        },
       },
       {
         word: "succeed",
         translation: "muvaffaqiyat qozonmoq",
+        details: {
+          explanation:
+            "To succeed is to complete something that you planned or tried to do.",
+          example: "He will continue to work on the robot until he succeeds.",
+        },
       },
       {
         word: "suspect",
         translation: "deb shubhalanmoq",
+        details: {
+          explanation: "To suspect something is to believe that it is true.",
+          example: "I suspect that those kids stole the money.",
+        },
       },
       {
         word: "valley",
         translation: "vodiy",
+        details: {
+          explanation:
+            "A valley is a low area of land between two mountains or hills.",
+          example:
+            "We looked at the valley below from the top of the mountain.",
+        },
       },
     ],
     choosen: false,
