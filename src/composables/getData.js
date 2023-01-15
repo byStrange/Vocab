@@ -1483,83 +1483,170 @@ const data = [
       {
         word: "admire",
         translation: "qoyil qolmoq",
+        details: {
+          explanation: "To admire someone is to like them for what they do",
+          example: "I admire my brother for his hard work",
+        },
       },
       {
         word: "aid",
         translation: "yordam bermoq",
+        details: {
+          explanation:
+            "To aid someone is to help them when they need something",
+          example: "The doctor aided the boy after his accident",
+        },
       },
       {
         word: "attempt",
         translation: "urinmoq, harakat qilmoq",
+        details: {
+          explanation:
+            "Authority is the power that someone has because of their position",
+          example: "The policeman has authority on the streets",
+        },
       },
       {
         word: "authority",
         translation: "vokolat, huquq",
+        details: {
+          explanation:
+            "A capital is an important city where a country's leaders live and work",
+          example: "We will visit the capital to learn about our government",
+        },
       },
       {
         word: "capital",
         translation: "poytaxt",
+        details: {
+          explanation: "To cooperate is to wkr together to do something",
+          example: "The students cooperated to clean up the classrom",
+        },
       },
       {
         word: "cooperate",
         translation: "hamkorlik qilmoq",
+        details: {
+          explanation:
+            "To defend someone ro something is to protect them from attack",
+          example: "The soldiers defended the town from the invaders",
+        },
       },
       {
         word: "defend",
         translation: "mudofaa qilmoq",
+        details: {
+          explanation:
+            "Destruction is damage to something so bad that it can't be fixed",
+          example:
+            "After the big fire, there was  much destruction in the city",
+        },
       },
       {
         word: "destruction",
         translation: "vayrona",
+        details: {
+          explanation: "Disorder is a lack of order, or a complete mess",
+          example: "The teacher's desk had many papers in disorder ",
+        },
       },
       {
         word: "disorder",
         translation: "tartibsizlik",
+        details: {
+          explanation:
+            "A division is the act of making smaller groups out of a large one",
+          example: "The chart had six divisions which all had different colors",
+        },
       },
       {
         word: "division",
         translation: "bo'lish taqsimlash",
+        details: {
+          explanation:
+            "To enable a person is to make it possible for them to do something",
+          example: "Having the key enabled us to open the door",
+        },
       },
       {
         word: "enable",
         translation: "imkoniyat bermoq",
+        details: {
+          explanation:
+            "To frustrate is to prevent someone from fulfilling their desire",
+          example: "The machine frustrated me because I couldn't fix it",
+        },
       },
       {
         word: "frustrate",
         translation: "umidsizlantirmoq",
+        details: {
+          explanation:
+            "To govern is to control the public business of a country, state or city",
+          example: "The US is governed from the White House",
+        },
       },
       {
         word: "govern",
         translation: "nazorat qilmoq, boshqarmoq",
+        details: {
+          explanation:
+            "To have plenty of something is to have more than you need",
+          example: "The school had plenty of books for the students to read",
+        },
       },
       {
         word: "plenty",
         translation: "yetarli miqdor",
+        details: {
+          explanation: "To relieve someone is to make them feel lees pain",
+          example: "The medicine relieved the sick boy",
+        },
       },
       {
         word: "relieve",
         translation: "og'irini yengillashtirmoq",
+        details: {
+          explanation:
+            "Reputation is the opinion that people have about someone",
+          example: "The doctor had a reputation for helping people",
+        },
       },
       {
         word: "reputation",
         translation: "obro",
+        details: {
+          explanation:
+            "Royal descirebes something that belongs to a king or queen",
+          example: "The king sat upon the royal throne",
+        },
       },
       {
         word: "royal",
         translation: "qirollik",
+        details: {
+          explanation:
+            "A skace is a oerson who is not free and must work for someone else",
+          example: "The slace worked very hard all day long",
+        },
       },
       {
         word: "slave",
         translation: "qul",
+        details: {
+          explanation: "To struggle is to fight against someone or something",
+          example: "The kids struggled with each other for the toy",
+        },
       },
       {
         word: "struggle",
         translation: "kurashmoq, yoqlashmoq",
+        details: {
+          explanation: "When someone is stupid, they lack intelligence",
+          example: "He said something stuped that made everyone angry at him",
+        },
       },
-      {
-        word: "stupid",
-        translation: "ahmoq, tentak",
-      },
+      { word: "stupid", translation: "ahmoq, tentak" },
     ],
     choosen: false,
   },
@@ -1570,82 +1657,172 @@ const data = [
       {
         word: "citizen",
         translation: "fuqaro",
+        details: {
+          explanation:
+            "A citizen is somone who lives in a certaion town or city",
+          example: "Carlos was born in Spain. He is a Spanish citizen",
+        },
       },
       {
         word: "council",
         translation: "kengash, konsullik",
+        details: {
+          explanation: "A council is a group of people who run a city or town",
+          example: "The council met to discuss the new laws for the city",
+        },
       },
       {
         word: "declare",
         translation: "aytmoq, bildirmoq",
+        details: {
+          explanation: "To declare is to say something officially ",
+          example: "I declared my love for him",
+        },
       },
       {
         word: "enormous",
         translation: "ulkan, juda katta",
+        details: {
+          explanation:
+            "When people or things are enormous, they are very large",
+          example: "My dog looks enormous next to yours",
+        },
       },
       {
         word: "extraordinary",
         translation: "turfa, g'ayritabiiy",
+        details: {
+          explanation:
+            "When someone or something are extraordinary, the are amazing",
+          example: "The fireman who rescued the girl was extraordinary",
+        },
       },
       {
         word: "fog",
         translation: "tuman",
+        details: {
+          explanation: "Fog is a thick cloud that is near the groun the water",
+          example: "I did not wanna druve ib the thick fog",
+        },
       },
       {
         word: "funeral",
         translation: "dafn marosimi",
+        details: {
+          explanation:
+            "A funeral is a ceremony that takes place after a person dies",
+          example: "They had a funeral for the soldier who died during the war",
+        },
       },
       {
         word: "giant",
         translation: "bahaybat, gigant",
+        details: {
+          explanation: "When people or things are giant, they are very big",
+          example: "The giant truck got in my way",
+        },
       },
       {
         word: "impression",
         translation: "taassurot",
+        details: {
+          explanation:
+            "An imporession the way of thinking about someone or something",
+          example:
+            "Most people's first impression of Dr. Giani is that he is mean",
+        },
       },
       {
         word: "income",
         translation: "daromad",
+        details: {
+          explanation: "Income is how much money a person or business makes",
+          example: "Her company pays her a fairly good income",
+        },
       },
       {
         word: "mad",
         translation: "badjahl, jahldor",
+        details: {
+          explanation: "When someone is mad, they are angry",
+          example: "Mother got mad when I did not list to her",
+        },
       },
       {
         word: "ought",
         translation: "kerak, lozim",
+        details: {
+          explanation:
+            "If someone ought to do something, then it is the right thing to do ",
+          example: "I ought to take my library  books back",
+        },
       },
       {
         word: "resist",
         translation: "qarshilik ko'rsatmoq",
+        details: {
+          explanation: "To resist something is to fight against it",
+          example: "He resisted the treatment at the hospital",
+        },
       },
       {
         word: "reveal",
         translation: "ko'rsatmoq",
+        details: {
+          explanation: "To reveal is to show something",
+          example: "I will reveal where I hid the candy bar",
+        },
       },
       {
         word: "rid",
         translation: "xalos qilmoq",
+        details: {
+          explanation:
+            "To rid is to make a place free from something or someone",
+          example: "We rid our home of mice by using traps",
+        },
       },
       {
         word: "sword",
         translation: "qilich, shamshir",
+        details: {
+          explanation: "A sword is along sharp weapon",
+          example: "They used to use swords in battles in ancient times",
+        },
       },
       {
         word: "tale",
         translation: "ertak, hikoya",
+        details: {
+          explanation: "A tale is a story",
+          example: "She told her two friends about the wild tale of her day",
+        },
       },
       {
         word: "trap",
         translation: "tutqunlikda saqlamoq",
+        details: {
+          explanation:
+            "To trap people or animals is to capture them so they cannot get away",
+          example: "We trapped butterfiles in a net",
+        },
       },
       {
         word: "trial",
         translation: "sud jarayoni",
+        details: {
+          explanation:
+            "A trial is the way a court discovers if a person is guilty or innocent",
+          example: "He went on trial for robbing the bank",
+        },
       },
       {
         word: "violent",
         translation: "zo'ravon, quturgan",
+        details: {
+          explanation: "When people are viokent, they want to hurt someone",
+          example: "The man was out into jail because he was violent",
+        },
       },
     ],
     choosen: false,
