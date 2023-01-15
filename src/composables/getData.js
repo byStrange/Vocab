@@ -1834,82 +1834,173 @@ const data = [
       {
         word: "admission",
         translation: "ruxsat, kirish",
+        details: {
+          explanation: "Admission is the act of allowing to enter a place",
+          example: "The admission ticket to the movie was $5",
+        },
       },
       {
         word: "astronomy",
         translation: "astronomiya",
+        details: {
+          explanation: "Astronomy is the study of the stars and planets",
+          example:
+            "Harold loved watchin the stars, so he decided to study astronomy",
+        },
       },
       {
         word: "blame",
         translation: "ayblamoq",
+        details: {
+          explanation:
+            "To blame someone for something bad is to say they did it",
+          example: "My mom blamed me for something I didn't do",
+        },
       },
       {
         word: "chemistry",
         translation: "kimyo",
+        details: {
+          explanation: "Chemistry the study of and reaction to substances",
+          example:
+            "In chemistry class, the professor taught us about chemical reactions",
+        },
       },
       {
         word: "despite",
         translation: "ga qaramsdan",
+        details: {
+          explanation:
+            "If something happens despite what you do, it happens anyway",
+          example: "We still played the game despite the cold weather",
+        },
       },
       {
         word: "dinosaur",
         translation: "dinozavr",
+        details: {
+          explanation:
+            "A dinosaur is a very big animal that lived millions of years ago.",
+          example: "I like to see the dinosaur bones at the museum.",
+        },
       },
       {
         word: "exhibit",
         translation: "eksponat",
+        details: {
+          explanation: "An exhibit is a display of interesting things.",
+          example: "There was an animal exhibit at the fair.",
+        },
       },
       {
         word: "fame",
         translation: "shon-shuhrat, obro'",
+        details: {
+          explanation: "Fame is reputation one has gained among the public.",
+          example: "He had fame and fortune, but he was not happy.",
+        },
       },
       {
         word: "forecast",
         translation: "ob-havo ma'lumoti",
+        details: {
+          explanation:
+            "A forecast is an idea about what the weather will be like in the future.",
+          example: "The forecast says that it will rain all week.",
+        },
       },
       {
         word: "genius",
         translation: "juda aqlli, geniy",
+        details: {
+          explanation: "A genius is a very smart person.",
+          example:
+            "Since she was a genius, she easily passed all of her school exams.",
+        },
       },
       {
         word: "gentle",
         translation: "muloyim, yuvosh",
+        details: {
+          explanation: "Someone who is gentle is kind and calm.",
+          example: "He is very gentle with the baby.",
+        },
       },
       {
         word: "geography",
         translation: "geografiya",
+        details: {
+          explanation: "Geography is the study of where things are.",
+          example: "I had to draw a map for geography class.",
+        },
       },
       {
         word: "iterface",
         translation: "xalaqit bermoq",
+        details: {
+          explanation:
+            "To interfere is to cause problems and keep something from happening.",
+          example:
+            "My little sister always interferes when I’m trying to study.",
+        },
       },
       {
         word: "lightly",
         translation: "muloyimlik bilan",
+        details: {
+          explanation: "To do something lightly is to not push very hard.",
+          example: "Draw lightly so you do not tear your paper.",
+        },
       },
       {
         word: "principal",
         translation: "maktab direktori",
+        details: {
+          explanation: "A principal is a person in charge of a school.",
+          example: "My school’s principal can be very strict with the rules.",
+        },
       },
       {
         word: "row",
         translation: "qator, saf",
+        details: {
+          explanation: "A row is a line of things.",
+          example: "James put all of his toy soldiers into neat rows.",
+        },
       },
       {
         word: "shelf",
         translation: "tokcha",
+        details: {
+          explanation: "A shelf is a place on a wall where you put things.",
+          example: "I keep my clothes on a shelf in my closet.",
+        },
       },
       {
         word: "spite",
         translation: "out of spite - qasddan",
+        details: {
+          explanation: "If you do something out of spite, you want to be mean.",
+          example:
+            "He snuck into his sister’s room and stole her bag out of spite.",
+        },
       },
       {
         word: "super",
         translation: "juda yaxshi",
+        details: {
+          explanation: "Super means really good.",
+          example: "My dad said I did a super Job cleaning the house.",
+        },
       },
       {
         word: "wet",
         translation: "nam, xo'l",
+        details: {
+          explanation: "If something is wet, it has water on it.",
+          example:
+            "Since my dog was wet, he tried to shake all the water off his body.",
+        },
       },
     ],
     choosen: false,
