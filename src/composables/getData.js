@@ -2031,6 +2031,186 @@ const data = [
     ],
     choosen: false,
   },
+  {
+    name: "",
+    id: "13",
+    words: [
+      {
+        word: "Eating habits",
+        translation: "ovqatlanish tartibi",
+      },
+      {
+        word: "Junk food",
+        translation: "ozuqaviy moddalari kam ovqat",
+      },
+      {
+        word: "To go on a diet",
+        translation: "diyeta qilmoq",
+      },
+      {
+        word: "Processed food",
+        translation: "ximkikatlarga boy ovqat",
+      },
+      {
+        word: "Food additive",
+        translation: "ovqatlarga qo'shiladigan ximikatlar",
+      },
+      {
+        word: "A balanced diet",
+        translation: "doimiy diyeta",
+      },
+      {
+        word: "Nourishing meals",
+        translation: "foydali, to'yimli ovqatlar",
+      },
+      {
+        word: "Organic food",
+        translation: "tabiiy ovqat",
+      },
+      {
+        word: "Fresh produce",
+        translation: "fresh food and vegetables",
+      },
+
+      {
+        word: "quick snack",
+        translation: "tez tamaddi qilish",
+      },
+      {
+        word: "to eat in moderation",
+        translation: "narmalniy ovqatlanish",
+      },
+      {
+        word: "portion sizes",
+        translation: "yeyiladigan ovqat hajmi",
+      },
+      {
+        word: "home-cooked meal",
+        translation: "uyda pishiriladigan ovqatlar",
+      },
+      {
+        word: "healthy appetite",
+        translation: "ko'p  ovqatlanish",
+      },
+      {
+        word: "hearty stew",
+        translation: "hamma narsasi bor sho'rva",
+      },
+      {
+        word: "second helping",
+        translation: "ikkinchi porsiya",
+      },
+      {
+        word: "international cuisine",
+        translation: "xalqaro oshxona, dunyo taomlari",
+      },
+      {
+        word: "food poisoning",
+        translation: "ovqatdan zaharlanish",
+      },
+      {
+        word: "light meals/food",
+        translation: "yengil taomlar",
+      },
+      {
+        word: "spoil one's appetite",
+        translation: "ishtahasini bo'g'moq",
+      },
+      {
+        word: "consume",
+        translation: "iste'mol qilmoq",
+      },
+      {
+        word: "filling food",
+        translation: "to'yimli ovqat",
+      },
+      {
+        word: "fattening food",
+        translation: "yog'li ovqat",
+      },
+      {
+        word: "digest",
+        translation: "hazm qilmoq",
+      },
+      {
+        word: "food adaptability",
+        translation: "ovqatlga moslashish",
+      },
+      {
+        word: "bon appetite",
+        translation: "yoqimli ishtaha",
+      },
+      {
+        word: "go Dutch",
+        translation: "bo'lib to'lamoq",
+        details: {
+          explanation:
+            "to go to a movie, restaurant, etc., as a group with each person paying for his or her own ticket, food, etc.",
+          example: "I will go Dutch with you on the movie if you want.",
+        },
+      },
+      {
+        word: "it is on me",
+        translation: "bu mening hisobimdan",
+      },
+      {
+        word: "eat like a pig",
+        translation: "befarosatlarcha yemoq",
+      },
+      {
+        word: "eat like a horse",
+        translation: "juda ham ko'p ovqatlanmoq",
+      },
+      {
+        word: "out to lunch",
+        translation: "careless, e'tiborsiz",
+        details: {
+          explanation:
+            "to be out to lunch means to be crazy, stupid, or not thinking clearly",
+          example:
+            "I think you are out to lunch if you think that is a good idea.",
+        },
+      },
+      {
+        word: "to stuff one's face",
+        translation: "rasvosini chiqarib ovqatlanmoq",
+        details: {
+          explanation:
+            "to stuff one's face means to eat a lot of food in a short time",
+          example:
+            "I stuffed my face with pizza and ice cream after I got home from school.",
+        },
+      },
+      {
+        word: "gain weight",
+        translation: "semirish",
+      },
+      {
+        word: "lose weight",
+        translation: "ozmoq",
+      },
+      {
+        word: "broth",
+        translation: "sho'rva",
+        details: {
+          explanation:
+            "a liquid that is made by boiling meat, fish, or vegetables",
+          example: "I like to drink chicken broth when I have a cold.",
+        },
+      },
+      {
+        word: "too many cooks spoil the broth",
+        translation: "qassob ko'paysa, mol harom o'ladi",
+        details: {
+          explanation:
+            "if too many people are involved in a task or activity, it will not be done well.",
+          example:
+            "The kids wanted to do a good science project but too many cooks spoilt the broth.",
+        },
+      },
+    ],
+    choosen: false,
+  },
 ];
 
 export { getData, data };

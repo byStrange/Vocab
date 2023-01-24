@@ -1,5 +1,5 @@
 <template>
-  <div class="container d-center" :data-id="fullWord">
+  <div class="container d-center">
     <Nav
       @showList="data_switched = 'on'"
       :data_switched="data_switched"
