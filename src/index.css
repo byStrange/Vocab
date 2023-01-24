@@ -138,12 +138,12 @@ body, html {
 }
 
 .list {
-  max-height: 50%;
   position: relative;
   max-width: 800px;
   width: 95%;
   position: absolute;
-  height: 50%;
+  height: 100%;
+  max-height: 470px;
   backdrop-filter: blur(20px);
 }
 
@@ -167,7 +167,6 @@ body, html {
 }
 
 .list .word {
-  font-weight: bold;
   font-size: 18px;
 }
 

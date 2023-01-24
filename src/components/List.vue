@@ -7,7 +7,7 @@
     <ul v-if="i.choosen">
         <li v-for="w in i.words" :key="w" @click="toggleDetail($event)" :ref="'word' + w">
           <div class="word">
-            <span>{{ w.word  }}</span> - <span>{{ w.translation }}</span>
+            <span style="font-weight: bold">{{ w.word  }}</span> - <span>{{ w.translation }}</span>
           </div>  
           <div class="details closed">
             <i  v-if="w?.details?.explanation">
