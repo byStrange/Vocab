@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   transition: 200ms linear;
-  font-family: Ubuntu, sans-serif, Arial;
+  font-family: w sans-serif;
 }
 
 body {
@@ -71,7 +71,7 @@ body, html {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(24px);
-}
+} 
 
 .topic.choosen {
   background: rgba(255, 255, 255, 0.2) !important;

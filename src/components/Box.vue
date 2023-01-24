@@ -23,7 +23,7 @@ import { data } from "@/composables/getData.js";
 
 export default {
   name: "Box",
-  props: ["showWord", "wordFromChoosenTopic"],
+  props: ["showWord", "wordFromChoosenTopic", "unknownWords"],
   data() {
     return {
       topics: data

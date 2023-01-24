@@ -7,6 +7,7 @@
     />
     <Box
       :showWord="showWord"
+      :unknownWords="unknownWords"
       @changeShowWord="changeShowWord($data)"
       @startTest="startTest($event)"
       :wordFromChoosenTopic="word"
@@ -31,6 +32,8 @@ export default {
       choosenTopic: null,
       word: null,
       fullWord: null,
+      unknownWords: [],
+      currentIndex: 0,
     };
   },
   methods: {
@@ -39,7 +42,7 @@ export default {
     },
     startTest($event) {
       this.choosenTopic = $event;
-      this.fullWord = this.choosenTopic.words.shift();
+      this.fullWord = this.choosenTopic.words[this.currentIndex];
       this.word = this.fullWord['translation'];
     },
     nextWord() {
@@ -47,10 +50,14 @@ export default {
         this.word = "THE END";
         return;
       }
-      this.fullWord = this.choosenTopic.words.shift();
+      this.currentIndex+=1
+      this.fullWord = this.choosenTopic.words[this.currentIndex];
       this.word = this.fullWord['translation'];
     },
     makeWordReversed() {
+      if (!this.unknownWords.includes(this.fullWord)) {
+        this.unknownWords.push(this.fullWord);
+      }
       this.word =
         this.fullWord['translation'] === this.word ? this.fullWord['word'] : this.fullWord['translation'];
     },
