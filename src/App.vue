@@ -12,8 +12,12 @@
       @startTest="startTest($event)"
       :wordFromChoosenTopic="word"
     />
-    <Panel @nextBtnClick="nextWord" @showBtnClick="makeWordReversed" />
-    <List :data_switched="data_switched" @closeListModal="closeListModal"/>
+    <Panel
+      @nextBtnClick="nextWord"
+      @showBtnClick="makeWordReversed"
+      :buttonName="buttonName"
+    />
+    <List :data_switched="data_switched" @closeListModal="closeListModal" />
   </div>
 </template>
 
@@ -34,6 +38,7 @@ export default {
       fullWord: null,
       unknownWords: [],
       currentIndex: 0,
+      buttonName: "Next",
     };
   },
   methods: {
@@ -41,33 +46,36 @@ export default {
       this.showWord = value;
     },
     startTest($event) {
+      this.currentIndex = 0;
       this.choosenTopic = $event;
       this.fullWord = this.choosenTopic.words[this.currentIndex];
-      this.word = this.fullWord['translation'];
+      this.word = this.fullWord["translation"];
     },
     nextWord() {
-      if (!this.choosenTopic.words.length) {
-        this.word = "THE END";
+      if (this.choosenTopic.words.length - 1 == this.currentIndex) {
+        this.currentIndex = 0;
+        this.buttonName = "Restart";
         return;
-      }
-      this.currentIndex+=1
+      } else this.buttonName = "Next";
       this.fullWord = this.choosenTopic.words[this.currentIndex];
-      this.word = this.fullWord['translation'];
+      this.currentIndex += 1;
+      this.word = this.fullWord["translation"];
+      console.log(this.currentIndex);
     },
     makeWordReversed() {
       if (!this.unknownWords.includes(this.fullWord)) {
         this.unknownWords.push(this.fullWord);
       }
       this.word =
-        this.fullWord['translation'] === this.word ? this.fullWord['word'] : this.fullWord['translation'];
+        this.fullWord["translation"] === this.word
+          ? this.fullWord["word"]
+          : this.fullWord["translation"];
     },
     closeListModal() {
-      this.data_switched = "off"
-    }
+      this.data_switched = "off";
+    },
   },
-  mounted() {
-    
-  },
+  mounted() {},
   name: "App",
   components: {
     Nav,
