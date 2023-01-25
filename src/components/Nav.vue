@@ -1,7 +1,7 @@
 <template>
     <div class="panel">
-        <button class="btn"  @click="showTopics">topics</button>
-        <button class="btn"  ref="listBtn" @click="showList">List</button>
+        <button class="btn" @click="showTopics">topics</button>
+        <button class="btn" @click="showList">List</button>
     </div>
 </template>
 

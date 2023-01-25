@@ -19,31 +19,21 @@
 </template>
 
 <script>
-import { data } from "@/composables/getData.js";
-
 export default {
   name: "Box",
-  props: ["showWord", "wordFromChoosenTopic", "unknownWords"],
-  data() {
-    return {
-      topics: data
-    };
-  },
+  props: ["showWord", "wordFromChoosenTopic", "unknownWords", 'topics'],
   methods: {
     selectTopic(e) {
       const topicId = e;
       const topic = this.topics.find((topic) => topic.id === topicId);
       topic.choosen = true;
-
       this.topics.forEach((topic) => {
         if (topic.id !== topicId) {
           topic.choosen = false;
         }
       });
-
       this.$emit("changeShowWord", true);
       this.$emit("startTest", topic);
-      console.log(topic)
     },
   },
 };
