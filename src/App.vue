@@ -21,17 +21,12 @@
     <List
       :data_switched="data_switched"
       @closeListModal="closeListModal"
-        :topics="topics"
+      :topics="topics"
     />
   </div>
 </template>
 
 <script>
-const access = {
-  BIN_ID: "63d16138ace6f33a22c7d290",
-  API_KEY: "$2b$10$WprOL5YhSf4LIiTxpgl6J.Oe.0GpRkAONcKwvXZdTKgp81wEBtGAe",
-};
-
 import Nav from "./components/Nav.vue";
 import Box from "./components/Box.vue";
 import List from "./components/List.vue";
@@ -48,7 +43,11 @@ export default {
       unknownWords: [],
       currentIndex: 0,
       buttonName: "Next",
-      topics: ''
+      topics: "",
+      access: {
+        BIN_ID: "63d16138ace6f33a22c7d290",
+        API_KEY: "$2b$10$WprOL5YhSf4LIiTxpgl6J.Oe.0GpRkAONcKwvXZdTKgp81wEBtGAe",
+      },
     };
   },
   created() {
@@ -59,16 +58,16 @@ export default {
     req.onreadystatechange = () => {
       if (req.readyState == XMLHttpRequest.DONE) {
         data = JSON.parse(req.responseText);
-        this.topics = data['record']['topics'];
+        this.topics = data["record"]["topics"];
       }
     };
 
     req.open(
       "GET",
-      `https://api.jsonbin.io/v3/b/${access.BIN_ID}/latest`,
+      `https://api.jsonbin.io/v3/b/${this.access.BIN_ID}/latest`,
       true
     );
-    req.setRequestHeader("X-Master-Key", access.API_KEY);
+    req.setRequestHeader("X-Master-Key", this.access.API_KEY);
     req.send();
   },
 
