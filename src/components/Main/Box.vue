@@ -5,7 +5,18 @@
     </div>
     <div class="topics d-center" ref="topics" v-if="!showWord">
       <template v-for="topic in topics" :key="topic.id">
+        <router-link v-if="linky" :to="{ name: 'Topic', params: { topicId: topic.id } }">
+          <div
+            class="topic d-center"
+            :class="{ choosen: topic.choosen }"
+            @click="selectTopic(topic.id)"
+            :data-id="topic.id"
+          >
+            <span>{{ topic.name }}</span>
+          </div>
+        </router-link>
         <div
+          v-else
           class="topic d-center"
           :class="{ choosen: topic.choosen }"
           @click="selectTopic(topic.id)"
@@ -19,9 +30,16 @@
 </template>
 
 <script>
+
 export default {
   name: "Box",
-  props: ["showWord", "wordFromChoosenTopic", "unknownWords", 'topics'],
+  props: [
+    "showWord",
+    "wordFromChoosenTopic",
+    "unknownWords",
+    "topics",
+    "linky",
+  ],
   methods: {
     selectTopic(e) {
       const topicId = e;

@@ -33,6 +33,13 @@ body, html {
   flex-direction: column;
 }
 
+.d-center .title {
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 2px 3px rgba(255, 255, 255, 0);
+  text-align: center;
+}
+
 .container > div {
   width: 100%;
   border-radius: 15px;

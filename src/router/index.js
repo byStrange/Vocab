@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "../views/Main.vue";
 import Add from "../views/Add.vue";
+import Topic from "../components/Add/Topic.vue";
+
 const routes = [
   {
     path: "/",
@@ -19,6 +21,12 @@ const routes = [
     path: "/add",
     name: "Add",
     component: Add,
+  },
+  // after /add it can be a subpath, like /add/{topicId}
+  {
+    path: "/add/:topicId",
+    name: "Topic",
+    component: Topic,
   },
 ];
 

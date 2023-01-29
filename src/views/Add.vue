@@ -1,9 +1,9 @@
 <template>
   <div class="container d-center">
     <Nav>
-        gi
+        <span class="title">Choose topic</span>
     </Nav>
-    <Box :topics="topics"/>
+    <Box :topics="topics" :linky="true"/>
   </div>
 </template>
 

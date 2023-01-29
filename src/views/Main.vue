@@ -13,6 +13,7 @@
         @startTest="startTest($event)"
         :wordFromChoosenTopic="word"
         :topics="topics"
+        :linky="false"
       />
       <Panel
         @nextBtnClick="nextWord"
