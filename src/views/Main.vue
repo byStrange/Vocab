@@ -4,6 +4,7 @@
         @showList="data_switched = 'on'"
         :data_switched="data_switched"
         @showTopics="showWord = false"
+        :showButtons="true"
       />
       <Box
         :showWord="showWord"

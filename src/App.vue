@@ -1,17 +1,16 @@
 <template>
-  <router-view>
-      <Main />
-  </router-view>
+  <router-view> </router-view>
 </template>
 
 <script>
-import Main from './views/Main.vue';
+import Main from "./views/Main.vue";
+import Add from "./views/Add.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Main,
+    Add,
   },
 };
-
 </script>

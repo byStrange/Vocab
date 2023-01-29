@@ -1,7 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Main from "../views/Main.vue";
-
+import Add from "../views/Add.vue";
 const routes = [
+  {
+    path: "/",
+    redirect: "/vocab",
+  },
   {
     path: "/vocab",
     name: "Main",
@@ -12,8 +16,9 @@ const routes = [
     redirect: "/vocab",
   },
   {
-    path: "/",
-    redirect: "/vocab",
+    path: "/add",
+    name: "Add",
+    component: Add,
   },
 ];
 
