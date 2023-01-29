@@ -132,6 +132,25 @@ body, html {
   transform: scale(1.01, 1.01);
 }
 
+input, textarea {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1.1rem;
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  transition: 250ms;
+}
+
+.field {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
 .btn:active {
   transform: scale(1.1, 1.1);
   -webkit-tap-highlight-color: transparent;
@@ -162,7 +181,12 @@ body, html {
   overflow: auto;
 }
 
-.list li {
+summary {
+  cursor: pointer;
+  color: #fff;
+}
+
+.list li, .word {
   width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 10px 15px;
