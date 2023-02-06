@@ -4,7 +4,6 @@
       class="content"
       ref="word"
       v-if="showWord"
-      data-current-topic-name="Hello topic"
     >
       <span> {{ wordFromChoosenTopic }}</span>
     </div>
