@@ -14,6 +14,7 @@
       :wordFromChoosenTopic="word"
       :topics="topics"
       :linky="false"
+      :topicName="choosenTopic?.name"
     />
     <Panel
       @nextBtnClick="nextWord"

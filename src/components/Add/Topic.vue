@@ -19,15 +19,27 @@
         <summary>Add Word</summary>
         <div class="add">
           <div class="field">
-            <input type="text" placeholder="Word" v-model="data.word" />
             <input
+              class="form-input"
+              type="text"
+              placeholder="Word"
+              v-model="data.word"
+            />
+            <input
+              class="form-input"
               type="text"
               placeholder="Translation"
               v-model="data.translation"
             />
           </div>
-          <textarea type="text" placeholder="Example" v-model="data.example" />
           <textarea
+            class="form-input"
+            type="text"
+            placeholder="Example"
+            v-model="data.example"
+          />
+          <textarea
+            class="form-input"
             type="text"
             placeholder="Explanation"
             v-model="data.explanation"
@@ -53,26 +65,24 @@ export default {
       },
     };
   },
-  computed: {
-    topics() {
-      return this.$store.state.topics;
-    },
-  },
-  watch: {
-    topics() {
-      this.currentTopic = this.topics.find(
-        (topic) => topic.id === this.$route.params.topicId
-      );
-    },
+  created() {
+    this.topics = this.$store.state.topics;
+    this.currentTopic = this.topics.find(
+      (topic) => topic.id === this.$route.params.topicId
+    );
   },
   methods: {
     add() {
       this.$store.commit("addWord", {
         topicId: this.$route.params.topicId,
-        word: this.data.word,
-        translation: this.data.translation,
-        example: this.data.example,
-        explanation: this.data.explanation,
+        newWord: {
+          word: this.data.word,
+          translation: this.data.translation,
+          details: {
+            example: this.data.example,
+            explanation: this.data.explanation,
+          },
+        },
       });
       this.data = {
         word: "",
@@ -80,7 +90,7 @@ export default {
         example: "",
         explanation: "",
       };
-    }
+    },
   },
 };
 </script>

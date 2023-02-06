@@ -1,5 +1,5 @@
 <template>
-  <div class="list" ref="list" :data-switched="data_switched" :sad="topics">
+  <div class="list" ref="list" :data-switched="data_switched">
     <div class="close d-center" @click="close">
       <span>&times;</span>
     </div>
