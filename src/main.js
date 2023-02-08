@@ -46,6 +46,19 @@ const store = createStore({
       state.topics.push(payload.newTopic);
       this.commit("saveData");
     },
+    deleteTopic(state, payload) {
+      let topic = state.topics.find((topic) => topic.id === payload.topicId);
+      let index = state.topics.indexOf(topic);
+      state.topics.splice(index, 1);
+      this.commit("saveData");  
+    },
+    deleteWord(state, payload) {
+      let topic = state.topics.find((topic) => topic.id === payload.topicId);
+      let word = topic.words.find((word) => word === payload.word);
+      let index = topic.words.indexOf(word);
+      topic.words.splice(index, 1);
+      this.commit("saveData");
+    },
     saveData(state) {
       let req = new XMLHttpRequest();
 

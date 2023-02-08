@@ -1,16 +1,17 @@
 <template>
-  <router-view> </router-view>
+  <div class="navigators">
+    <div class="nav to-left d-center" @click="this.$router.back()">
+      <span></span>
+    </div>
+    <div class="nav to-right d-center" @click="this.$router.forward()">
+      <span></span>
+    </div>
+  </div>
+  <router-view />
 </template>
 
 <script>
-import Main from "./views/Main.vue";
-import Add from "./views/Add.vue";
-
 export default {
   name: "App",
-  components: {
-    Main,
-    Add,
-  },
 };
 </script>

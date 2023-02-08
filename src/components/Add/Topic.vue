@@ -9,43 +9,63 @@
         min-height: 0;
       "
     >
+      <span
+        style="
+          color: #fff;
+          padding: 10px;
+          font-size: 20px;
+          display: inline-block;
+        "
+        >Add Word to <b>{{ currentTopic.name }}</b></span
+      >
+      <div class="add">
+        <div class="field">
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Word"
+            v-model="data.word"
+          />
+          <input
+            class="form-input"
+            type="text"
+            placeholder="Translation"
+            v-model="data.translation"
+          />
+        </div>
+        <textarea
+          class="form-input"
+          type="text"
+          placeholder="Example"
+          v-model="data.example"
+        />
+        <textarea
+          class="form-input"
+          type="text"
+          placeholder="Explanation"
+          v-model="data.explanation"
+        />
+        <div class="d-flex g-1 mb-1">
+          <button class="btn secondary" @click="add">Add</button>
+          <button
+            class="btn danger"
+            title="delete this topic"
+            @click="deleteTopic"
+          >
+            Delete this topic
+          </button>
+        </div>
+      </div>
       <details>
         <summary>Words</summary>
         <template v-for="word in currentTopic.words" :key="word">
-          <span class="word"> {{ word.word }} - {{ word.translation }} </span>
+          <span class="word d-flex jc-sb">
+            <span>{{ word.word }} - {{ word.translation }}</span>
+            <button class="mini danger btn" @click="deleteWord(word)">
+              Del
+            </button></span
+          >
         </template>
-      </details>
-      <details>
-        <summary>Add Word</summary>
-        <div class="add">
-          <div class="field">
-            <input
-              class="form-input"
-              type="text"
-              placeholder="Word"
-              v-model="data.word"
-            />
-            <input
-              class="form-input"
-              type="text"
-              placeholder="Translation"
-              v-model="data.translation"
-            />
-          </div>
-          <textarea
-            class="form-input"
-            type="text"
-            placeholder="Example"
-            v-model="data.example"
-          />
-          <textarea
-            class="form-input"
-            type="text"
-            placeholder="Explanation"
-            v-model="data.explanation"
-          />
-          <button class="btn secondary" @click="add">Add</button>
-        </div>
       </details>
     </div>
   </div>
@@ -90,6 +110,18 @@ export default {
         example: "",
         explanation: "",
       };
+    },
+    deleteTopic() {
+      this.$store.commit("deleteTopic", {
+        topicId: this.$route.params.topicId,
+      });
+      this.$router.push("/add");
+    },
+    deleteWord(word) {
+      this.$store.commit("deleteWord", {
+        topicId: this.$route.params.topicId,
+        word,
+      });
     },
   },
 };
