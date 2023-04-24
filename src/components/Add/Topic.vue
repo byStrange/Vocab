@@ -25,6 +25,7 @@
             type="text"
             placeholder="Word"
             v-model="data.word"
+            ref="word"
           />
           <input
             class="form-input"
@@ -36,14 +37,14 @@
         <textarea
           class="form-input"
           type="text"
-          placeholder="Example"
-          v-model="data.example"
+          placeholder="Explanation"
+          v-model="data.explanation"
         />
         <textarea
           class="form-input"
           type="text"
-          placeholder="Explanation"
-          v-model="data.explanation"
+          placeholder="Example"
+          v-model="data.example"
         />
         <div class="d-flex g-1 mb-1">
           <button class="btn secondary" @click="add">Add</button>
@@ -93,6 +94,7 @@ export default {
   },
   methods: {
     add() {
+      this.$refs.word.focus();
       this.$store.commit("addWord", {
         topicId: this.$route.params.topicId,
         newWord: {
@@ -112,9 +114,8 @@ export default {
       };
     },
     deleteTopic() {
-      this.$store.commit("deleteTopic", {
-        topicId: this.$route.params.topicId,
-      });
+      if (!confirm("Are you sure?")) return;
+      this.$store.commit("deleteTopic", this.$route.params.topicId);
       this.$router.push("/add");
     },
     deleteWord(word) {
