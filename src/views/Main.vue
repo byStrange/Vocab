@@ -17,6 +17,7 @@
       :topicName="choosenTopic?.name"
     />
     <Panel
+    v-if="showWord"
       @nextBtnClick="nextWord"
       @showBtnClick="makeWordReversed"
       :buttonName="buttonName"

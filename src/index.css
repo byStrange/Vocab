@@ -370,6 +370,9 @@ summary {
   .list[data-switched="on"] {
     height: 100%;
   }
+  .navigators {
+    display: none;  
+  }
 }
 
 ::-webkit-scrollbar {

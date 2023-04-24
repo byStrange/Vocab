@@ -1,10 +1,6 @@
 <template>
   <div class="box d-center">
-    <div
-      class="content"
-      ref="word"
-      v-if="showWord"
-    >
+    <div class="content" ref="word" v-if="showWord">
       <span> {{ wordFromChoosenTopic }}</span>
     </div>
     <div class="topics d-center" ref="topics" v-if="!showWord">
@@ -20,8 +16,13 @@
               :class="{ choosen: topic.choosen }"
               @click="selectTopic(topic.id)"
               :data-id="topic.id"
+              :title="topic.name"
             >
-              <span>{{ topic.name }}</span>
+              <span>{{
+                topic.name.length > 10
+                  ? topic.name.substring(0, 5) + "..." + topic.name.slice(-5)
+                  : topic.name
+              }}</span>
             </div>
           </router-link>
           <div
@@ -30,8 +31,13 @@
             :class="{ choosen: topic.choosen }"
             @click="selectTopic(topic.id)"
             :data-id="topic.id"
+            :title="topic.name"
           >
-            <span>{{ topic.name }}</span>
+            <span>{{
+              topic.name.length > 10
+                ? topic.name.substring(0, 5) + "..." + topic.name.slice(-5)
+                : topic.name
+            }}</span>
           </div>
         </template>
       </template>
