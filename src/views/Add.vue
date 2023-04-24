@@ -3,7 +3,7 @@
     <Nav>
       <span class="title">Choose topic</span>
     </Nav>
-    <Box :topics="topics" :linky="false">
+    <Box :topics="topics" :linky="true">
         <div class="topic d-center" style="font-size: 4rem; flex-direction: column; gap: 5px" @click="showAddTopicButton = true">
           <span v-if="!showAddTopicButton">+</span>
           <template v-else>

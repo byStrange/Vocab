@@ -13,6 +13,7 @@
           <router-link
             v-if="linky"
             :to="{ name: 'Topic', params: { topicId: topic.id } }"
+            style="text-decoration: none"
           >
             <div
               class="topic d-center"
